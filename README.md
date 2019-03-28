@@ -1,4 +1,5 @@
 # Neuroparc
+* [Table](#Table)
 
 This repository contains a number of useful parcellations, templates, masks, and transforms to (and from) MNI152NLin6 space. The files are named according to the BIDs specification.
 
@@ -6,6 +7,7 @@ This repository contains a number of useful parcellations, templates, masks, and
 
 
 ## Atlas Info Summary
+<a name="Table"></a>
 
 | Atlas Name | # Regions | Symmetrical? | Hierarchical? | Labelled? | Generation Method | Average Vol/Region | Native coordinate space | Description | Sources | Year of Origin |
 |------------------------------|-----------|--------------|---------------|-----------|---------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------|

@@ -24,11 +24,11 @@ def get_centers(brain):
     return dict(zip(labs, coords_connectome))
 
 def main():
-    labdir = '../atlases/label/'
+    labdir = '../atlases/label/Human'
     specparc = ['desikan', 'tissue', 'DK', 'pp264']
-    specdir = '../atlases/label'
-    jsdir = '../atlases/label/label_updated'
-    outdir = '../atlases/label/label_updated2'
+    specdir = '../atlases/label/Human'
+    jsdir = '../atlases/label/Human/label_updated'
+    outdir = '../atlases/label/Human/label_updated2'
     brainglob = glob.glob(os.path.join(labdir, '*.nii.gz'))
     jsonglob = glob.glob(os.path.join(jsdir, '*.json'))
     # iterate over the brains

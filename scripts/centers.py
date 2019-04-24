@@ -16,6 +16,8 @@ def get_centers(brain):
     dat = brain.get_data()
     labs = np.unique(dat)
     labs = labs[labs != 0]
+    # Line below throwing memory error. I will likely calculate each layer one at a time
+    # and find the center
     fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
     parcels = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
     regions_imgs = image.iter_img(parcels)

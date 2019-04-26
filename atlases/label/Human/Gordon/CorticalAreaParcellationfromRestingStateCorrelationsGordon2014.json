@@ -1,0 +1,1338 @@
+{
+    "0": {
+        "label": "empty",
+        "size": "6758464"
+    },
+    "1": {
+        "label": "Default_L",
+        "size": "6624"
+    },
+    "10": {
+        "label": "Auditory_L",
+        "size": "957"
+    },
+    "100": {
+        "label": "DorsalAttn_L",
+        "size": "5117"
+    },
+    "101": {
+        "label": "CinguloOperc_L",
+        "size": "716"
+    },
+    "102": {
+        "label": "Auditory_L",
+        "size": "489"
+    },
+    "103": {
+        "label": "CinguloOperc_L",
+        "size": "1173"
+    },
+    "104": {
+        "label": "Auditory_L",
+        "size": "1238"
+    },
+    "105": {
+        "label": "CinguloOperc_L",
+        "size": "1709"
+    },
+    "106": {
+        "label": "DorsalAttn_L",
+        "size": "2461"
+    },
+    "107": {
+        "label": "DorsalAttn_L",
+        "size": "426"
+    },
+    "108": {
+        "label": "FrontoParietal_L",
+        "size": "509"
+    },
+    "109": {
+        "label": "FrontoParietal_L",
+        "size": "1443"
+    },
+    "11": {
+        "label": "None_L",
+        "size": "839"
+    },
+    "110": {
+        "label": "DorsalAttn_L",
+        "size": "973"
+    },
+    "111": {
+        "label": "CinguloOperc_L",
+        "size": "1045"
+    },
+    "112": {
+        "label": "CinguloOperc_L",
+        "size": "1906"
+    },
+    "113": {
+        "label": "DorsalAttn_L",
+        "size": "476"
+    },
+    "114": {
+        "label": "Default_L",
+        "size": "540"
+    },
+    "115": {
+        "label": "None_L",
+        "size": "688"
+    },
+    "116": {
+        "label": "Default_L",
+        "size": "2783"
+    },
+    "117": {
+        "label": "Default_L",
+        "size": "1648"
+    },
+    "118": {
+        "label": "None_L",
+        "size": "280"
+    },
+    "119": {
+        "label": "None_L",
+        "size": "680"
+    },
+    "12": {
+        "label": "CinguloParietal_L",
+        "size": "675"
+    },
+    "120": {
+        "label": "None_L",
+        "size": "1896"
+    },
+    "121": {
+        "label": "None_L",
+        "size": "676"
+    },
+    "122": {
+        "label": "None_L",
+        "size": "1412"
+    },
+    "123": {
+        "label": "None_L",
+        "size": "1031"
+    },
+    "124": {
+        "label": "None_L",
+        "size": "553"
+    },
+    "125": {
+        "label": "None_L",
+        "size": "431"
+    },
+    "126": {
+        "label": "Default_L",
+        "size": "799"
+    },
+    "127": {
+        "label": "Default_L",
+        "size": "3932"
+    },
+    "128": {
+        "label": "None_L",
+        "size": "2761"
+    },
+    "129": {
+        "label": "None_L",
+        "size": "2905"
+    },
+    "13": {
+        "label": "RetrosplenialTemporal_L",
+        "size": "1441"
+    },
+    "130": {
+        "label": "RetrosplenialTemporal_L",
+        "size": "2027"
+    },
+    "131": {
+        "label": "Visual_L",
+        "size": "1524"
+    },
+    "132": {
+        "label": "Visual_L",
+        "size": "1079"
+    },
+    "133": {
+        "label": "None_L",
+        "size": "920"
+    },
+    "134": {
+        "label": "None_L",
+        "size": "799"
+    },
+    "135": {
+        "label": "None_L",
+        "size": "994"
+    },
+    "136": {
+        "label": "Visual_L",
+        "size": "1717"
+    },
+    "137": {
+        "label": "Visual_L",
+        "size": "2483"
+    },
+    "138": {
+        "label": "Visual_L",
+        "size": "820"
+    },
+    "139": {
+        "label": "Visual_L",
+        "size": "1197"
+    },
+    "14": {
+        "label": "RetrosplenialTemporal_L",
+        "size": "1306"
+    },
+    "140": {
+        "label": "Visual_L",
+        "size": "1825"
+    },
+    "141": {
+        "label": "Visual_L",
+        "size": "2772"
+    },
+    "142": {
+        "label": "None_L",
+        "size": "1214"
+    },
+    "143": {
+        "label": "RetrosplenialTemporal_L",
+        "size": "875"
+    },
+    "144": {
+        "label": "None_L",
+        "size": "1132"
+    },
+    "145": {
+        "label": "Default_L",
+        "size": "1059"
+    },
+    "146": {
+        "label": "Default_L",
+        "size": "1510"
+    },
+    "147": {
+        "label": "CinguloOperc_L",
+        "size": "344"
+    },
+    "148": {
+        "label": "FrontoParietal_L",
+        "size": "1093"
+    },
+    "149": {
+        "label": "FrontoParietal_L",
+        "size": "630"
+    },
+    "15": {
+        "label": "Visual_L",
+        "size": "7917"
+    },
+    "150": {
+        "label": "Default_L",
+        "size": "3384"
+    },
+    "151": {
+        "label": "Default_L",
+        "size": "894"
+    },
+    "152": {
+        "label": "Default_L",
+        "size": "886"
+    },
+    "153": {
+        "label": "CinguloOperc_L",
+        "size": "935"
+    },
+    "154": {
+        "label": "Default_L",
+        "size": "605"
+    },
+    "155": {
+        "label": "DorsalAttn_L",
+        "size": "836"
+    },
+    "156": {
+        "label": "Default_L",
+        "size": "805"
+    },
+    "157": {
+        "label": "Default_L",
+        "size": "1881"
+    },
+    "158": {
+        "label": "VentralAttn_L",
+        "size": "601"
+    },
+    "159": {
+        "label": "None_L",
+        "size": "1463"
+    },
+    "16": {
+        "label": "Visual_L",
+        "size": "532"
+    },
+    "160": {
+        "label": "Auditory_L",
+        "size": "2094"
+    },
+    "161": {
+        "label": "VentralAttn_L",
+        "size": "576"
+    },
+    "162": {
+        "label": "Default_R",
+        "size": "6091"
+    },
+    "163": {
+        "label": "SMhand_R",
+        "size": "2125"
+    },
+    "164": {
+        "label": "SMmouth_R",
+        "size": "1464"
+    },
+    "165": {
+        "label": "Default_R",
+        "size": "2259"
+    },
+    "166": {
+        "label": "Visual_R",
+        "size": "3104"
+    },
+    "167": {
+        "label": "FrontoParietal_R",
+        "size": "858"
+    },
+    "168": {
+        "label": "FrontoParietal_R",
+        "size": "900"
+    },
+    "169": {
+        "label": "Visual_R",
+        "size": "557"
+    },
+    "17": {
+        "label": "Visual_L",
+        "size": "312"
+    },
+    "170": {
+        "label": "FrontoParietal_R",
+        "size": "1429"
+    },
+    "171": {
+        "label": "Auditory_R",
+        "size": "899"
+    },
+    "172": {
+        "label": "None_R",
+        "size": "1470"
+    },
+    "173": {
+        "label": "CinguloParietal_R",
+        "size": "683"
+    },
+    "174": {
+        "label": "RetrosplenialTemporal_R",
+        "size": "2706"
+    },
+    "175": {
+        "label": "Visual_R",
+        "size": "9104"
+    },
+    "176": {
+        "label": "Visual_R",
+        "size": "1339"
+    },
+    "177": {
+        "label": "Visual_R",
+        "size": "1388"
+    },
+    "178": {
+        "label": "None_R",
+        "size": "520"
+    },
+    "179": {
+        "label": "None_R",
+        "size": "465"
+    },
+    "18": {
+        "label": "None_L",
+        "size": "661"
+    },
+    "180": {
+        "label": "CinguloOperc_R",
+        "size": "3491"
+    },
+    "181": {
+        "label": "CinguloOperc_R",
+        "size": "533"
+    },
+    "182": {
+        "label": "FrontoParietal_R",
+        "size": "1245"
+    },
+    "183": {
+        "label": "Salience_R",
+        "size": "555"
+    },
+    "184": {
+        "label": "Default_R",
+        "size": "1842"
+    },
+    "185": {
+        "label": "CinguloOperc_R",
+        "size": "2446"
+    },
+    "186": {
+        "label": "Default_R",
+        "size": "492"
+    },
+    "187": {
+        "label": "CinguloOperc_R",
+        "size": "460"
+    },
+    "188": {
+        "label": "CinguloOperc_R",
+        "size": "917"
+    },
+    "189": {
+        "label": "DorsalAttn_R",
+        "size": "1914"
+    },
+    "19": {
+        "label": "None_L",
+        "size": "328"
+    },
+    "190": {
+        "label": "SMhand_R",
+        "size": "1811"
+    },
+    "191": {
+        "label": "SMhand_R",
+        "size": "2299"
+    },
+    "192": {
+        "label": "CinguloOperc_R",
+        "size": "651"
+    },
+    "193": {
+        "label": "SMhand_R",
+        "size": "954"
+    },
+    "194": {
+        "label": "SMhand_R",
+        "size": "369"
+    },
+    "195": {
+        "label": "SMhand_R",
+        "size": "667"
+    },
+    "196": {
+        "label": "CinguloOperc_R",
+        "size": "1132"
+    },
+    "197": {
+        "label": "SMmouth_R",
+        "size": "1247"
+    },
+    "198": {
+        "label": "CinguloOperc_R",
+        "size": "759"
+    },
+    "199": {
+        "label": "DorsalAttn_R",
+        "size": "667"
+    },
+    "2": {
+        "label": "SMhand_L",
+        "size": "1958"
+    },
+    "20": {
+        "label": "Visual_L",
+        "size": "736"
+    },
+    "200": {
+        "label": "Default_R",
+        "size": "1843"
+    },
+    "201": {
+        "label": "SMhand_R",
+        "size": "1893"
+    },
+    "202": {
+        "label": "SMhand_R",
+        "size": "788"
+    },
+    "203": {
+        "label": "DorsalAttn_R",
+        "size": "1346"
+    },
+    "204": {
+        "label": "SMhand_R",
+        "size": "428"
+    },
+    "205": {
+        "label": "SMhand_R",
+        "size": "1005"
+    },
+    "206": {
+        "label": "SMhand_R",
+        "size": "484"
+    },
+    "207": {
+        "label": "SMhand_R",
+        "size": "818"
+    },
+    "208": {
+        "label": "DorsalAttn_R",
+        "size": "843"
+    },
+    "209": {
+        "label": "SMhand_R",
+        "size": "622"
+    },
+    "21": {
+        "label": "CinguloOperc_L",
+        "size": "2802"
+    },
+    "210": {
+        "label": "SMhand_R",
+        "size": "229"
+    },
+    "211": {
+        "label": "DorsalAttn_R",
+        "size": "708"
+    },
+    "212": {
+        "label": "SMmouth_R",
+        "size": "3936"
+    },
+    "213": {
+        "label": "SMhand_R",
+        "size": "1654"
+    },
+    "214": {
+        "label": "SMhand_R",
+        "size": "1184"
+    },
+    "215": {
+        "label": "SMhand_R",
+        "size": "553"
+    },
+    "216": {
+        "label": "SMhand_R",
+        "size": "2605"
+    },
+    "217": {
+        "label": "SMhand_R",
+        "size": "1176"
+    },
+    "218": {
+        "label": "SMmouth_R",
+        "size": "772"
+    },
+    "219": {
+        "label": "CinguloOperc_R",
+        "size": "1621"
+    },
+    "22": {
+        "label": "CinguloOperc_L",
+        "size": "2579"
+    },
+    "220": {
+        "label": "Default_R",
+        "size": "3242"
+    },
+    "221": {
+        "label": "VentralAttn_R",
+        "size": "728"
+    },
+    "222": {
+        "label": "VentralAttn_R",
+        "size": "815"
+    },
+    "223": {
+        "label": "CinguloOperc_R",
+        "size": "6041"
+    },
+    "224": {
+        "label": "Auditory_R",
+        "size": "957"
+    },
+    "225": {
+        "label": "Default_R",
+        "size": "1266"
+    },
+    "226": {
+        "label": "VentralAttn_R",
+        "size": "695"
+    },
+    "227": {
+        "label": "Auditory_R",
+        "size": "1700"
+    },
+    "228": {
+        "label": "VentralAttn_R",
+        "size": "453"
+    },
+    "229": {
+        "label": "VentralAttn_R",
+        "size": "967"
+    },
+    "23": {
+        "label": "VentralAttn_L",
+        "size": "1447"
+    },
+    "230": {
+        "label": "Auditory_R",
+        "size": "676"
+    },
+    "231": {
+        "label": "VentralAttn_R",
+        "size": "1074"
+    },
+    "232": {
+        "label": "Auditory_R",
+        "size": "575"
+    },
+    "233": {
+        "label": "Auditory_R",
+        "size": "1256"
+    },
+    "234": {
+        "label": "CinguloOperc_R",
+        "size": "1682"
+    },
+    "235": {
+        "label": "CinguloOperc_R",
+        "size": "1497"
+    },
+    "236": {
+        "label": "DorsalAttn_R",
+        "size": "1417"
+    },
+    "237": {
+        "label": "VentralAttn_R",
+        "size": "725"
+    },
+    "238": {
+        "label": "CinguloOperc_R",
+        "size": "1203"
+    },
+    "239": {
+        "label": "Auditory_R",
+        "size": "652"
+    },
+    "24": {
+        "label": "FrontoParietal_L",
+        "size": "1346"
+    },
+    "240": {
+        "label": "FrontoParietal_R",
+        "size": "1635"
+    },
+    "241": {
+        "label": "VentralAttn_R",
+        "size": "564"
+    },
+    "242": {
+        "label": "VentralAttn_R",
+        "size": "1495"
+    },
+    "243": {
+        "label": "VentralAttn_R",
+        "size": "1444"
+    },
+    "244": {
+        "label": "Auditory_R",
+        "size": "375"
+    },
+    "245": {
+        "label": "CinguloOperc_R",
+        "size": "897"
+    },
+    "246": {
+        "label": "CinguloOperc_R",
+        "size": "770"
+    },
+    "247": {
+        "label": "Salience_R",
+        "size": "643"
+    },
+    "248": {
+        "label": "CinguloOperc_R",
+        "size": "523"
+    },
+    "249": {
+        "label": "CinguloOperc_R",
+        "size": "1651"
+    },
+    "25": {
+        "label": "Default_L",
+        "size": "999"
+    },
+    "250": {
+        "label": "DorsalAttn_R",
+        "size": "552"
+    },
+    "251": {
+        "label": "Visual_R",
+        "size": "1225"
+    },
+    "252": {
+        "label": "DorsalAttn_R",
+        "size": "1875"
+    },
+    "253": {
+        "label": "DorsalAttn_R",
+        "size": "1428"
+    },
+    "254": {
+        "label": "CinguloParietal_R",
+        "size": "1538"
+    },
+    "255": {
+        "label": "Visual_R",
+        "size": "838"
+    },
+    "256": {
+        "label": "Visual_R",
+        "size": "581"
+    },
+    "257": {
+        "label": "Default_R",
+        "size": "304"
+    },
+    "258": {
+        "label": "Visual_R",
+        "size": "1119"
+    },
+    "259": {
+        "label": "Default_R",
+        "size": "3570"
+    },
+    "26": {
+        "label": "Default_L",
+        "size": "665"
+    },
+    "260": {
+        "label": "FrontoParietal_R",
+        "size": "343"
+    },
+    "261": {
+        "label": "FrontoParietal_R",
+        "size": "254"
+    },
+    "262": {
+        "label": "DorsalAttn_R",
+        "size": "826"
+    },
+    "263": {
+        "label": "Visual_R",
+        "size": "6238"
+    },
+    "264": {
+        "label": "Visual_R",
+        "size": "2321"
+    },
+    "265": {
+        "label": "Visual_R",
+        "size": "3697"
+    },
+    "266": {
+        "label": "DorsalAttn_R",
+        "size": "499"
+    },
+    "267": {
+        "label": "Visual_R",
+        "size": "833"
+    },
+    "268": {
+        "label": "Auditory_R",
+        "size": "711"
+    },
+    "269": {
+        "label": "Auditory_R",
+        "size": "870"
+    },
+    "27": {
+        "label": "CinguloOperc_L",
+        "size": "1553"
+    },
+    "270": {
+        "label": "SMhand_R",
+        "size": "865"
+    },
+    "271": {
+        "label": "DorsalAttn_R",
+        "size": "1182"
+    },
+    "272": {
+        "label": "FrontoParietal_R",
+        "size": "921"
+    },
+    "273": {
+        "label": "FrontoParietal_R",
+        "size": "1863"
+    },
+    "274": {
+        "label": "CinguloOperc_R",
+        "size": "1585"
+    },
+    "275": {
+        "label": "DorsalAttn_R",
+        "size": "4140"
+    },
+    "276": {
+        "label": "FrontoParietal_R",
+        "size": "353"
+    },
+    "277": {
+        "label": "FrontoParietal_R",
+        "size": "1879"
+    },
+    "278": {
+        "label": "Default_R",
+        "size": "1519"
+    },
+    "279": {
+        "label": "Default_R",
+        "size": "2237"
+    },
+    "28": {
+        "label": "CinguloOperc_L",
+        "size": "429"
+    },
+    "280": {
+        "label": "None_R",
+        "size": "1212"
+    },
+    "281": {
+        "label": "None_R",
+        "size": "1203"
+    },
+    "282": {
+        "label": "None_R",
+        "size": "490"
+    },
+    "283": {
+        "label": "None_R",
+        "size": "1605"
+    },
+    "284": {
+        "label": "None_R",
+        "size": "1604"
+    },
+    "285": {
+        "label": "None_R",
+        "size": "225"
+    },
+    "286": {
+        "label": "None_R",
+        "size": "529"
+    },
+    "287": {
+        "label": "None_R",
+        "size": "1403"
+    },
+    "288": {
+        "label": "None_R",
+        "size": "594"
+    },
+    "289": {
+        "label": "None_R",
+        "size": "479"
+    },
+    "29": {
+        "label": "Salience_L",
+        "size": "656"
+    },
+    "290": {
+        "label": "Default_R",
+        "size": "3536"
+    },
+    "291": {
+        "label": "None_R",
+        "size": "975"
+    },
+    "292": {
+        "label": "None_R",
+        "size": "4058"
+    },
+    "293": {
+        "label": "Visual_R",
+        "size": "435"
+    },
+    "294": {
+        "label": "RetrosplenialTemporal_R",
+        "size": "524"
+    },
+    "295": {
+        "label": "RetrosplenialTemporal_R",
+        "size": "1059"
+    },
+    "296": {
+        "label": "None_R",
+        "size": "1065"
+    },
+    "297": {
+        "label": "None_R",
+        "size": "642"
+    },
+    "298": {
+        "label": "Visual_R",
+        "size": "4646"
+    },
+    "299": {
+        "label": "Visual_R",
+        "size": "2877"
+    },
+    "3": {
+        "label": "SMmouth_L",
+        "size": "2128"
+    },
+    "30": {
+        "label": "SMhand_L",
+        "size": "277"
+    },
+    "300": {
+        "label": "None_R",
+        "size": "938"
+    },
+    "301": {
+        "label": "None_R",
+        "size": "1583"
+    },
+    "302": {
+        "label": "None_R",
+        "size": "420"
+    },
+    "303": {
+        "label": "None_R",
+        "size": "1068"
+    },
+    "304": {
+        "label": "None_R",
+        "size": "858"
+    },
+    "305": {
+        "label": "None_R",
+        "size": "443"
+    },
+    "306": {
+        "label": "None_R",
+        "size": "626"
+    },
+    "307": {
+        "label": "Visual_R",
+        "size": "1023"
+    },
+    "308": {
+        "label": "Visual_R",
+        "size": "1175"
+    },
+    "309": {
+        "label": "Visual_R",
+        "size": "807"
+    },
+    "31": {
+        "label": "SMhand_L",
+        "size": "1679"
+    },
+    "310": {
+        "label": "Visual_R",
+        "size": "916"
+    },
+    "311": {
+        "label": "Visual_R",
+        "size": "833"
+    },
+    "312": {
+        "label": "None_R",
+        "size": "1173"
+    },
+    "313": {
+        "label": "RetrosplenialTemporal_R",
+        "size": "612"
+    },
+    "314": {
+        "label": "None_R",
+        "size": "387"
+    },
+    "315": {
+        "label": "Default_R",
+        "size": "1127"
+    },
+    "316": {
+        "label": "Default_R",
+        "size": "653"
+    },
+    "317": {
+        "label": "CinguloOperc_R",
+        "size": "696"
+    },
+    "318": {
+        "label": "CinguloOperc_R",
+        "size": "1579"
+    },
+    "319": {
+        "label": "FrontoParietal_R",
+        "size": "1395"
+    },
+    "32": {
+        "label": "SMhand_L",
+        "size": "660"
+    },
+    "320": {
+        "label": "FrontoParietal_R",
+        "size": "553"
+    },
+    "321": {
+        "label": "Default_R",
+        "size": "1584"
+    },
+    "322": {
+        "label": "Default_R",
+        "size": "2456"
+    },
+    "323": {
+        "label": "Default_R",
+        "size": "681"
+    },
+    "324": {
+        "label": "Default_R",
+        "size": "1268"
+    },
+    "325": {
+        "label": "Default_R",
+        "size": "1329"
+    },
+    "326": {
+        "label": "Default_R",
+        "size": "504"
+    },
+    "327": {
+        "label": "FrontoParietal_R",
+        "size": "2002"
+    },
+    "328": {
+        "label": "FrontoParietal_R",
+        "size": "794"
+    },
+    "329": {
+        "label": "Auditory_R",
+        "size": "122"
+    },
+    "33": {
+        "label": "SMhand_L",
+        "size": "331"
+    },
+    "330": {
+        "label": "Auditory_R",
+        "size": "2259"
+    },
+    "331": {
+        "label": "Default_R",
+        "size": "610"
+    },
+    "332": {
+        "label": "VentralAttn_R",
+        "size": "768"
+    },
+    "333": {
+        "label": "VentralAttn_R",
+        "size": "371"
+    },
+    "34": {
+        "label": "CinguloOperc_L",
+        "size": "1376"
+    },
+    "35": {
+        "label": "SMhand_L",
+        "size": "1251"
+    },
+    "36": {
+        "label": "SMhand_L",
+        "size": "1739"
+    },
+    "37": {
+        "label": "SMhand_L",
+        "size": "844"
+    },
+    "38": {
+        "label": "SMhand_L",
+        "size": "2510"
+    },
+    "39": {
+        "label": "SMmouth_L",
+        "size": "814"
+    },
+    "4": {
+        "label": "Default_L",
+        "size": "1897"
+    },
+    "40": {
+        "label": "CinguloOperc_L",
+        "size": "494"
+    },
+    "41": {
+        "label": "DorsalAttn_L",
+        "size": "1825"
+    },
+    "42": {
+        "label": "DorsalAttn_L",
+        "size": "538"
+    },
+    "43": {
+        "label": "DorsalAttn_L",
+        "size": "636"
+    },
+    "44": {
+        "label": "Default_L",
+        "size": "2515"
+    },
+    "45": {
+        "label": "SMhand_L",
+        "size": "2037"
+    },
+    "46": {
+        "label": "SMhand_L",
+        "size": "651"
+    },
+    "47": {
+        "label": "SMhand_L",
+        "size": "1618"
+    },
+    "48": {
+        "label": "SMhand_L",
+        "size": "695"
+    },
+    "49": {
+        "label": "DorsalAttn_L",
+        "size": "772"
+    },
+    "5": {
+        "label": "Visual_L",
+        "size": "4505"
+    },
+    "50": {
+        "label": "SMhand_L",
+        "size": "925"
+    },
+    "51": {
+        "label": "DorsalAttn_L",
+        "size": "1587"
+    },
+    "52": {
+        "label": "DorsalAttn_L",
+        "size": "944"
+    },
+    "53": {
+        "label": "SMmouth_L",
+        "size": "4157"
+    },
+    "54": {
+        "label": "SMhand_L",
+        "size": "522"
+    },
+    "55": {
+        "label": "DorsalAttn_L",
+        "size": "972"
+    },
+    "56": {
+        "label": "SMhand_L",
+        "size": "1631"
+    },
+    "57": {
+        "label": "SMhand_L",
+        "size": "1052"
+    },
+    "58": {
+        "label": "SMhand_L",
+        "size": "1310"
+    },
+    "59": {
+        "label": "SMmouth_L",
+        "size": "654"
+    },
+    "6": {
+        "label": "Default_L",
+        "size": "5224"
+    },
+    "60": {
+        "label": "VentralAttn_L",
+        "size": "282"
+    },
+    "61": {
+        "label": "VentralAttn_L",
+        "size": "418"
+    },
+    "62": {
+        "label": "VentralAttn_L",
+        "size": "5763"
+    },
+    "63": {
+        "label": "CinguloOperc_L",
+        "size": "2100"
+    },
+    "64": {
+        "label": "Auditory_L",
+        "size": "450"
+    },
+    "65": {
+        "label": "Auditory_L",
+        "size": "362"
+    },
+    "66": {
+        "label": "Auditory_L",
+        "size": "1542"
+    },
+    "67": {
+        "label": "Auditory_L",
+        "size": "736"
+    },
+    "68": {
+        "label": "Auditory_L",
+        "size": "1031"
+    },
+    "69": {
+        "label": "Auditory_L",
+        "size": "504"
+    },
+    "7": {
+        "label": "FrontoParietal_L",
+        "size": "554"
+    },
+    "70": {
+        "label": "Auditory_L",
+        "size": "504"
+    },
+    "71": {
+        "label": "CinguloOperc_L",
+        "size": "1478"
+    },
+    "72": {
+        "label": "CinguloOperc_L",
+        "size": "1696"
+    },
+    "73": {
+        "label": "None_L",
+        "size": "2447"
+    },
+    "74": {
+        "label": "DorsalAttn_L",
+        "size": "1226"
+    },
+    "75": {
+        "label": "VentralAttn_L",
+        "size": "1272"
+    },
+    "76": {
+        "label": "CinguloOperc_L",
+        "size": "2154"
+    },
+    "77": {
+        "label": "Auditory_L",
+        "size": "1000"
+    },
+    "78": {
+        "label": "FrontoParietal_L",
+        "size": "2033"
+    },
+    "79": {
+        "label": "VentralAttn_L",
+        "size": "835"
+    },
+    "8": {
+        "label": "Visual_L",
+        "size": "2411"
+    },
+    "80": {
+        "label": "VentralAttn_L",
+        "size": "2826"
+    },
+    "81": {
+        "label": "CinguloOperc_L",
+        "size": "679"
+    },
+    "82": {
+        "label": "CinguloOperc_L",
+        "size": "605"
+    },
+    "83": {
+        "label": "Salience_L",
+        "size": "483"
+    },
+    "84": {
+        "label": "CinguloOperc_L",
+        "size": "2179"
+    },
+    "85": {
+        "label": "VentralAttn_L",
+        "size": "662"
+    },
+    "86": {
+        "label": "VentralAttn_L",
+        "size": "640"
+    },
+    "87": {
+        "label": "DorsalAttn_L",
+        "size": "2236"
+    },
+    "88": {
+        "label": "DorsalAttn_L",
+        "size": "1387"
+    },
+    "89": {
+        "label": "CinguloParietal_L",
+        "size": "646"
+    },
+    "9": {
+        "label": "FrontoParietal_L",
+        "size": "586"
+    },
+    "90": {
+        "label": "Visual_L",
+        "size": "1048"
+    },
+    "91": {
+        "label": "DorsalAttn_L",
+        "size": "1322"
+    },
+    "92": {
+        "label": "DorsalAttn_L",
+        "size": "467"
+    },
+    "93": {
+        "label": "CinguloParietal_L",
+        "size": "1164"
+    },
+    "94": {
+        "label": "Default_L",
+        "size": "2552"
+    },
+    "95": {
+        "label": "DorsalAttn_L",
+        "size": "604"
+    },
+    "96": {
+        "label": "FrontoParietal_L",
+        "size": "1065"
+    },
+    "97": {
+        "label": "Visual_L",
+        "size": "3254"
+    },
+    "98": {
+        "label": "Visual_L",
+        "size": "1142"
+    },
+    "99": {
+        "label": "Visual_L",
+        "size": "1809"
+    }
+}

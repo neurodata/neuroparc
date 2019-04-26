@@ -18,7 +18,7 @@ This repository contains a number of useful parcellations, templates, masks, and
 | Talairach | 1105 | No | Yes | Yes | Semi-automated? | 1698.114 | Talairach coordinates | A hierarchical atlas split into 5 leves: Hemisphere, Lobe, Gyrus, Tissue Type, and Cell Type | https://www.ncbi.nlm.nih.gov/pubmed/7008525 | 1980 |
 | Brodmann | 40 | Yes | Yes | No | Brodman areas separated by gyri | 32978.512 |  | Corticall parcellation separating regions based on cellular morphology and organization | http://digital.zbmed.de/zbmed/id/554966 | 1909 |
 | Princeton | 49 | Yes | Yes | Yes |  | 1217.388 |  |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4585523/ | 2015 |
-| pp264 | 58 | No |  | No |  | 470.966 |  |  |  |  |
+| pp264 | 58 | No |  | No |  | 470.966 |  |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222858/ |  |
 | Slab | 1068 |  |  | No |  | 493.719 |  |  |  |  |
 | Tissue | 3 |  | No | No |  | 609031.667 |  |  | (Tissue-based segmentation: WM, GM, CSF) | 2018 |
 | Yeo 7 | 7 | Yes | No | Yes | Clustered to identify networks of functionally coupled regions | 75383.571 | FreeSurfer surface space | Local networks confined to sensory and motor cortices, functional connectivity followed topographic representations across adjacent areas | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174820/ | 2011 |

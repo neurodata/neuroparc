@@ -3,7 +3,7 @@
 
 This repository contains a number of useful parcellations, templates, masks, and transforms to (and from) MNI152NLin6 space. The files are named according to the BIDs specification.
 
-![](atlases/Human/img/brainAtlases_color_wRegions_v3.png)
+![](atlases/Human/all_img/brainAtlases_color_wRegions_v3.png)
 
 
 ## Atlas Info Summary

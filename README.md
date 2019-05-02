@@ -3,7 +3,7 @@
 
 This repository contains a number of useful parcellations, templates, masks, and transforms to (and from) MNI152NLin6 space. The files are named according to the BIDs specification.
 
-![](https://github.com/NeuroDataDesign/the-ents/blob/explore-atlases/atlases/Results/brainAtlases_color_wRegions.png)
+![](atlases\img\brainAtlases_color_wRegions_v3.png)
 
 
 ## Atlas Info Summary

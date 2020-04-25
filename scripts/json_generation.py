@@ -5,6 +5,7 @@ import os
 import glob
 from nilearn import plotting as nip
 from nilearn import image
+from argparse import ArgumentParser
 
 
 def get_centers(brain):
@@ -26,6 +27,37 @@ def get_centers(brain):
     return dict(zip(labs, coords_connectome))
 
 def main():
+
+    parser = ArgumentParser(
+        description="Script to take already MNI-aligned atlas images and generate json file information."
+    )
+    parser.add_argument(
+        "input_dir",
+        help="""The directory with the mri parcellation
+        files you intend to process are.""",
+    )
+    parser.add_argument(
+        "output_dir",
+        help="""The directory to store the generated json file(s).""",
+    )
+    parser.add_argument(
+        "--MNI_align",
+        help="Whether to align atlas to MNI before generating json file",
+        action="store",
+        default=False,
+    )
+
+
+
+    # and ... begin!
+    print("\nBeginning neuroparc ...")
+
+    # ---------------- Parse CLI arguments ---------------- #
+    result = parser.parse_args()
+    input_dir = result.input_dir
+    output_dir = result.output_dir
+    
+
     labdir = '../atlases/label/Human'
     specparc = ['desikan', 'tissue', 'DK', 'pp264']
     specdir = '../atlases/label/Human'
@@ -64,3 +96,8 @@ def main():
                         js_contents[k] = {"label": v['region'], "center": None}
                 with open(jsout, 'w') as jso:
                     json.dump(js_contents, jso, indent=4)
+
+
+
+if __name__ == "__main__":
+    main()

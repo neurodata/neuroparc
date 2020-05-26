@@ -107,23 +107,23 @@ def main():
     
     if vox_size:
         # align input file to the dataset grid of "master"
-        cmd = f"3dresample -input {input_file} -prefix {output_name} -master {ref_brain}"
+        cmd = f"3dresample -input {input_file} -prefix {output_name}.nii.gz -master {ref_brain}"
         subprocess.call(cmd, shell=True)
         # Change datatype of resampled file to 768?
-        im = nb.load(output_name)
+        im = nb.load(f"{output_name}.nii.gz")
         newdat = im.get_data().astype(np.uint32)
         im.header['datatype'] = 768
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_name)
 
 
     if ref_brain:
-        output_reg = f"{output_dir}/reg_{output_name}"
+        output_reg = f"{output_dir}/reg_{output_name}.nii.gz"
         # register image to atlas
-        cmd = f"flirt -in {output_name} -out {output_reg} -ref {ref_brain} -applyisoxfm {vox_size} -interp nearestneighbour"
+        cmd = f"flirt -in {output_name}.nii.gz -out {output_reg} -ref {ref_brain} -applyisoxfm {vox_size} -interp nearestneighbour"
         subprocess.call(cmd, shell=True)
         
         # Change datatype of registered file to 768?
-        im.nb.load(output_reg)
+        im.nb.load(f"{output_reg}.nii.gz")
         newdat=im.get_data().astype(np.uint32)
         im.header['datatype'] = 768
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_reg)
@@ -137,56 +137,56 @@ def main():
     #jsonglob = glob.glob(os.path.join(jsdir, '*.json'))
     
     # iterate over the brains
-    for brainf in input_file:
+    #for brainf in input_file:
         # get the name of the particular parcel
         #brain_name = str.split(os.path.basename(brainf), '.')[0]
         #bname = str.split(brain_name, '_')[0]
         #jsout = os.path.join(output_dir, "{}.json".format(brain_name))
         
-        jsout = f"{output_name}.json"
-        js_contents=[]
+    jsout = f"{output_name}.json"
+    js_contents={}
         
-        parcel_im = nb.load(brainf)
-        parcel_centers = get_centers(parcel_im)
-        if csv_f:
-            for (k, v) in csv_dict.items():
-                try:
-                    js_contents[k] = {"label": v, "center": parcel_centers[int(k)]}
-                except KeyError:
-                    js_contents[k] = {"label": v, "center": None}
-            with open(jsout, 'w') as jso:
-                json.dump(js_contents, jso, indent=4)
+    parcel_im = nb.load(input_file)
+    parcel_centers = get_centers(parcel_im)
+    if csv_f:
+        for (k, v) in csv_dict.items():
+            try:
+                js_contents[k] = {"label": v, "center": parcel_centers[int(k)]}
+            except KeyError:
+                js_contents[k] = {"label": v, "center": None}
+        with open(jsout, 'w') as jso:
+            json.dump(js_contents, jso, indent=4)
             
-            #jsf = os.path.join(jsdir, "{}.json".format(brain_name))
-            #with open(jsf) as js:
-            #    js_contents = json.load(js)
-            #    for (k, v) in js_contents.items():
-            #        try:
-            #            js_contents[k] = {"label": v['region'], "center": parcel_centers[int(k)]}
-            #        except KeyError:
-            #            js_contents[k] = {"label": v['region'], "center": None}
-            #    with open(jsout, 'w') as jso:
-            #        json.dump(js_contents, jso, indent=4)
-        else:
-            # find a corresponding json file
-            for (k, v) in parcel_centers.items():
-                try:
-                    js_contents[k] = {"center": parcel_centers[int(k)]}
-                except KeyError:
-                    js_contents[k] = {"center": None}
-            with open(jsout, 'w') as jso:
-                json.dump(js_contents, jso, indent=4)
+        #jsf = os.path.join(jsdir, "{}.json".format(brain_name))
+        #with open(jsf) as js:
+        #    js_contents = json.load(js)
+        #    for (k, v) in js_contents.items():
+        #        try:
+        #            js_contents[k] = {"label": v['region'], "center": parcel_centers[int(k)]}
+        #        except KeyError:
+        #            js_contents[k] = {"label": v['region'], "center": None}
+        #    with open(jsout, 'w') as jso:
+        #        json.dump(js_contents, jso, indent=4)
+    else:
+        # find a corresponding json file
+        for (k, v) in parcel_centers.items():
+            try:
+                js_contents[k] = {"center": parcel_centers[int(k)]}
+            except KeyError:
+                js_contents[k] = {"center": None}
+        with open(jsout, 'w') as jso:
+            json.dump(js_contents, jso, indent=4)
             
-            #jsf = os.path.join(specdir, "{}.json".format(brain_name))
-            #with open(jsout) as js:
-            #    js_contents = json.load(js)
-            #    for (k, v) in js_contents.items():
-            #        try:
-            #            js_contents[k] = {"center": parcel_centers[int(k)]}
-            #        except KeyError:
-            #            js_contents[k] = {"center": None}
-            #    with open(jsout, 'w') as jso:
-            #        json.dump(js_contents, jso, indent=4)
+        #jsf = os.path.join(specdir, "{}.json".format(brain_name))
+        #with open(jsout) as js:
+        #    js_contents = json.load(js)
+        #    for (k, v) in js_contents.items():
+        #        try:
+        #            js_contents[k] = {"center": parcel_centers[int(k)]}
+        #        except KeyError:
+        #            js_contents[k] = {"center": None}
+        #    with open(jsout, 'w') as jso:
+        #        json.dump(js_contents, jso, indent=4)
 
 
 if __name__ == "__main__":

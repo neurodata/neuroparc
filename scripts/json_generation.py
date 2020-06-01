@@ -91,11 +91,10 @@ def main():
     ref_brain = result.ref_brain
     csv_f = result.label_csv
 
-    output_name = f"{output_dir}/{output_name}"
 
 
     # Load and organize csv for use in json creation
-    if csv:
+    if csv_f:
         biglist=[]
         with open(csv_f, newline='') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=',')
@@ -107,23 +106,23 @@ def main():
     
     if vox_size:
         # align input file to the dataset grid of "master"
-        cmd = f"3dresample -input {input_file} -prefix {output_name}.nii.gz -master {ref_brain}"
+        cmd = f"3dresample -input {input_file} -prefix {output_dir}/{output_name}.nii.gz -master {ref_brain}"
         subprocess.call(cmd, shell=True)
         # Change datatype of resampled file to 768?
-        im = nb.load(f"{output_name}.nii.gz")
+        im = nb.load(f"{output_dir}/{output_name}.nii.gz")
         newdat = im.get_data().astype(np.uint32)
         im.header['datatype'] = 768
-        nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_name)
+        nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=f"{output_dir}/{output_name}.nii.gz")
 
 
     if ref_brain:
         output_reg = f"{output_dir}/reg_{output_name}.nii.gz"
         # register image to atlas
-        cmd = f"flirt -in {output_name}.nii.gz -out {output_reg} -ref {ref_brain} -applyisoxfm {vox_size} -interp nearestneighbour"
+        cmd = f"flirt -in {output_dir}/{output_name}.nii.gz -out {output_reg} -ref {ref_brain} -applyisoxfm {vox_size} -interp nearestneighbour"
         subprocess.call(cmd, shell=True)
         
         # Change datatype of registered file to 768?
-        im.nb.load(f"{output_reg}.nii.gz")
+        im = nb.load(f"{output_reg}")
         newdat=im.get_data().astype(np.uint32)
         im.header['datatype'] = 768
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_reg)
@@ -143,7 +142,7 @@ def main():
         #bname = str.split(brain_name, '_')[0]
         #jsout = os.path.join(output_dir, "{}.json".format(brain_name))
         
-    jsout = f"{output_name}.json"
+    jsout = f"{output_dir}/reg_{output_name}.json"
     js_contents={}
         
     parcel_im = nb.load(input_file)

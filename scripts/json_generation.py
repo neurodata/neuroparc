@@ -17,8 +17,11 @@ def get_centers(brain):
     Returns a dictionary of label: coordinate as an [x, y, z] array
     """
     dat = brain.get_data()
-    labs = np.unique(dat)
-    labs = labs[labs != 0]
+    #nip.find_parcellation_cut_coords(dat, label_hemisphere='left')
+    #nip.find_parcellation_cut_coords(dat, label_hemisphere='right')
+    
+    labs, size = np.unique(dat, return_counts=True)
+    #labs = labs[labs != 0]
     # Line below throwing memory error. I will likely calculate each layer one at a time
     # and find the center
     fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
@@ -26,7 +29,7 @@ def get_centers(brain):
     regions_imgs = image.iter_img(parcels)
     # compute the centers of mass for each ROI
     coords_connectome = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
-    return dict(zip(labs, coords_connectome))
+    return dict(zip(labs, coords_connectome)), size
 
 def main():
 
@@ -78,7 +81,6 @@ def main():
     )
 
 
-
     # and ... begin!
     print("\nBeginning neuroparc ...")
 
@@ -128,31 +130,20 @@ def main():
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_reg)
 
     
-    #specdir = '../atlases/label/Human'
-    #jsdir = '../atlases/label/Human/label_updated'
-    #outdir = '../atlases/label/Human/label_updated2'
-    
-    #brainglob = glob.glob(os.path.join(input_dir, '*.nii.gz'))
-    #jsonglob = glob.glob(os.path.join(jsdir, '*.json'))
-    
-    # iterate over the brains
-    #for brainf in input_file:
-        # get the name of the particular parcel
-        #brain_name = str.split(os.path.basename(brainf), '.')[0]
-        #bname = str.split(brain_name, '_')[0]
-        #jsout = os.path.join(output_dir, "{}.json".format(brain_name))
-        
     jsout = f"{output_dir}/reg_{output_name}.json"
     js_contents={}
         
     parcel_im = nb.load(input_file)
-    parcel_centers = get_centers(parcel_im)
+    parcel_centers, size = get_centers(parcel_im)
     if csv_f:
+    # find a corresponding json file
+        js_contents[str(0)] = {"label": "empty", "center":None}
         for (k, v) in csv_dict.items():
+            k=int(k)
             try:
-                js_contents[k] = {"label": v, "center": parcel_centers[int(k)]}
+                js_contents[str(k)] = {"label": v, "center": parcel_centers[int(k)]}
             except KeyError:
-                js_contents[k] = {"label": v, "center": None}
+                js_contents[str(k)] = {"label": v, "center": None}
         with open(jsout, 'w') as jso:
             json.dump(js_contents, jso, indent=4)
             
@@ -167,12 +158,13 @@ def main():
         #    with open(jsout, 'w') as jso:
         #        json.dump(js_contents, jso, indent=4)
     else:
-        # find a corresponding json file
+        js_contents[str(0)] = {"label": "empty", "center":None}
         for (k, v) in parcel_centers.items():
+            k=int(k)
             try:
-                js_contents[k] = {"center": parcel_centers[int(k)]}
+                js_contents[str(k)] = {"label": None,"center": parcel_centers[int(k)],"size":int(size[int(k)])}
             except KeyError:
-                js_contents[k] = {"center": None}
+                js_contents[str(k)] = {"label": None, "center": None}
         with open(jsout, 'w') as jso:
             json.dump(js_contents, jso, indent=4)
             

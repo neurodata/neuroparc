@@ -1,5 +1,7 @@
 import nibabel as nb
 import numpy as np
+from argparse import ArgumentParser
+from matplotlib import pyplot as plt
 
 
 def dice_roi(atlas1, atlas2):
@@ -22,23 +24,47 @@ def dice_roi(atlas1, atlas2):
     labs1 = np.unique(atlas1)
     labs2 = np.unique(atlas2)
 
+    Dice = np.zeros((labs1.size +1, labs2.size +1))
+
     for val1 in labs1:
         for val2 in labs2:
 
             dice = np.sum(atlas1[atlas2==val2]==val1)*2.0 / (np.sum(atlas1[atlas1==val1]==val1) + np.sum(atlas2[atlas2==val2]==val2))
 
-    #k=1
-    # segmentation
-    #seg = np.zeros((100,100), dtype='int')
-    #seg[30:70, 30:70] = k
-    # ground truth
-    #gt = np.zeros((100,100), dtype='int')
-    #gt[30:70, 40:80] = k
-    #dice = np.sum(seg[gt==k]==k)*2.0 / (np.sum(seg[seg==k]==k) + np.sum(gt[gt==k]==k))
+            Dice[int(val1)][int(val2)]=float(dice)
 
-    print(f'Dice similarity score is {dice}')
+            print(f'Dice coefficient for Atlas1 {val1}, Atlas2 {val2} = {dice}')
 
+            if dice >= 1 or dice < 0:
+                raise ValueError(f"Dice coefficient is greater than 1 or less than 0 ({dice}) at atlas1: {val1}, atlas2: {val2}")
 
+    
+    #Generate png of heatmap
+
+    fig, ax = plt.subplots()
+    im = ax.imshow(Dice)
+
+    #axes
+    ax.set_xticks(np.arange(len(labs2)))
+    ax.set_yticks(np.arange(len(labs1)))
+
+    ax.set_xticklabels(labs2)
+    ax.set_yticklabels(labs1)
+
+    plt.setp(ax.get_xticklabels(), fontsize=4, rotation=45, ha="right", rotation_mode="anchor")
+    plt.setp(ax.get_yticklabels(), fontsize=4)
+    
+    ax.set_aspect(aspect=0.3)
+    #jdhao.github.io/2017/06/03/change-aspect-ratio-in-mpl
+
+    plt.show()
+
+    plt.savefig('/outside/woop3.png', dpi=800)
+
+    return Dice, labs1, labs2
+    print('Done')
+    
+   
 
 def main():
 
@@ -60,8 +86,8 @@ def main():
     parser.add_argument(
         "output_dir",
         help="""Path to directory you wish to store output
-        heatmap."""
-        action="store"
+        heatmap.""",
+        action="store",
     )
     
 
@@ -78,4 +104,7 @@ def main():
     # TODO: Add creation of output_dir
 
 
-    dice_roi(atlas1,atlas2)
+    Dice_matrix, ylabels, xlabels = dice_roi(atlas1,atlas2)
+
+if __name__ == "__main__":
+    main()

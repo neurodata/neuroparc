@@ -30,7 +30,7 @@ def dice_roi(atlas1, atlas2):
         for val2 in labs2:
 
             dice = np.sum(atlas1[atlas2==val2]==val1)*2.0 / (np.sum(atlas1[atlas1==val1]==val1) + np.sum(atlas2[atlas2==val2]==val2))
-
+            
             Dice[int(val1)][int(val2)]=float(dice)
 
             print(f'Dice coefficient for Atlas1 {val1}, Atlas2 {val2} = {dice}')

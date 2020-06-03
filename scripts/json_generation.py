@@ -94,6 +94,12 @@ def main():
     csv_f = result.label_csv
 
 
+    if not output_name:
+        inp = input_file.split("/")[-1]
+        inp = inp.split(".nii")[0]
+        refp = ref_brain.split("/")[-1]
+        refp = refp.split(".nii")[0]
+        output_name = f"{inp}_{refp}"
 
     # Load and organize csv for use in json creation
     if csv_f:
@@ -133,7 +139,7 @@ def main():
     jsout = f"{output_dir}/reg_{output_name}.json"
     js_contents={}
         
-    parcel_im = nb.load(input_file)
+    parcel_im = nb.load(output_reg)
     parcel_centers, size = get_centers(parcel_im)
     if csv_f:
     # find a corresponding json file

@@ -17,11 +17,16 @@ def get_centers(brain):
     Returns a dictionary of label: coordinate as an [x, y, z] array
     """
     dat = brain.get_data()
-    #nip.find_parcellation_cut_coords(dat, label_hemisphere='left')
-    #nip.find_parcellation_cut_coords(dat, label_hemisphere='right')
     
     labs, size = np.unique(dat, return_counts=True)
-    #labs = labs[labs != 0]
+
+    size=dict(zip(labs,size))
+        
+    # Bit of a clumsy stop-gap for correcting for lost ROIs due to registration
+    if labs[-1] > len(labs):
+        labs = [i for i in range(labs[-1]+1)]
+
+
     # Line below throwing memory error. I will likely calculate each layer one at a time
     # and find the center
     fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
@@ -29,7 +34,9 @@ def get_centers(brain):
     regions_imgs = image.iter_img(parcels)
     # compute the centers of mass for each ROI
     coords_connectome = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
-    return dict(zip(labs, coords_connectome)), size
+    
+    return dict(zip(labs, zip(coords_connectome, size)))
+    #return dict(zip(labs, coords_connectome)), size
 
 def main():
 
@@ -38,8 +45,9 @@ def main():
     )
     parser.add_argument(
         "input_file",
-        help="""The path of the mri parcellation
-        file you intend to process.""",
+        help="""The path of the mri parcellation file you intend to process.
+        If you only specify this value, 'output_dir', and optionally '--label_csv',
+        then a JSON file will be generate without manipulating this input file.""",
         action="store",
     )
     parser.add_argument(
@@ -57,22 +65,20 @@ def main():
         default=None,
     )
     parser.add_argument(
-        "--voxel_size",
-        help="""Whether you want to resample the input parcellation to a specific voxel size,
-        this process will be done before alignment to a reference brain. Enter either '1', '2',
-        or '4' to resample to 1x1x1mm, 2x2x2mm, and 4x4x4mm, respectfully. Default is None""",
+        "--ref_brain",
+        help="""Path for reference image you wish to register your parcellation too,
+        be sure that it has the correct voxel size you want your output atlas file to have.
+        If None, resampling and registration will not be done. Default is None.""",
         action="store",
         default=None,
     )
     parser.add_argument(
-        "--ref_brain",
-        help="""Path for reference image you wish to register your parcellation too,
-        for the best results have its voxel size match --voxel_size. If None, registration
-        to reference brain will not be done. Default is None.""",
+        "--voxel_size",
+        help="""Voxel size (1,2,4 mm^3, etc.) of the ref_brain image specified in 'ref_brain'. This value must be
+        input if you wish to run resampling and registration. Default is 1.""",
         action="store",
-        default=None,
+        default='1',
     )
-
     parser.add_argument(
         "--label_csv",
         help="csv file containing the ROI label information for the parcellation file, default is None",
@@ -89,12 +95,12 @@ def main():
     input_file = result.input_file
     output_dir = result.output_dir
     output_name = result.output_name
-    vox_size = result.voxel_size
     ref_brain = result.ref_brain
+    vox_size = result.voxel_size
     csv_f = result.label_csv
 
-
-    if not output_name:
+    #If you have an input file, reference file, and no output name
+    if input_file and ref_brain and not output_name: 
         inp = input_file.split("/")[-1]
         inp = inp.split(".nii")[0]
         refp = ref_brain.split("/")[-1]
@@ -112,8 +118,8 @@ def main():
             csv_dict = {biglist[i]: biglist[i+1] for i in range(0, len(biglist), 2)}
 
     
-    if vox_size:
-        # align input file to the dataset grid of "master"
+    if ref_brain:
+        # align input file to the dataset grid of the reference brain "master"
         cmd = f"3dresample -input {input_file} -prefix {output_dir}/{output_name}.nii.gz -master {ref_brain}"
         subprocess.call(cmd, shell=True)
         # Change datatype of resampled file to 768?
@@ -122,8 +128,7 @@ def main():
         im.header['datatype'] = 768
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=f"{output_dir}/{output_name}.nii.gz")
 
-
-    if ref_brain:
+        #Register atlas to reference brain
         output_reg = f"{output_dir}/reg_{output_name}.nii.gz"
         # register image to atlas
         cmd = f"flirt -in {output_dir}/{output_name}.nii.gz -out {output_reg} -ref {ref_brain} -applyisoxfm {vox_size} -interp nearestneighbour"
@@ -136,20 +141,29 @@ def main():
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_reg)
 
     
+    if not ref_brain and not output_name: #If you just want a json file to be made, outputname will = input_file name
+        inp = input_file.split("/")[-1]
+        inp = inp.split(".nii")[0]
+        output_name=inp
+
+        output_reg = input_file #Have the parcel_centers run on input file without any resampling/registering
+
+
+
     jsout = f"{output_dir}/reg_{output_name}.json"
     js_contents={}
         
     parcel_im = nb.load(output_reg)
-    parcel_centers, size = get_centers(parcel_im)
+    parcel_centers, size= get_centers(parcel_im)
     if csv_f:
     # find a corresponding json file
         js_contents[str(0)] = {"label": "empty", "center":None}
         for (k, v) in csv_dict.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": v, "center": parcel_centers[int(k)]}
+                js_contents[str(k)] = {"label": v, "center": parcel_centers[int(k)], "size":size[int(k)]}
             except KeyError:
-                js_contents[str(k)] = {"label": v, "center": None}
+                js_contents[str(k)] = {"label": v, "center": None, "size": None}
         #Atlas-wide Metadata
         js_contents["MetaData"] = {"AtlasName": '', "Description": '',
         "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
@@ -164,9 +178,9 @@ def main():
         for (k, v) in parcel_centers.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": None,"center": parcel_centers[int(k)],"size":int(size[int(k)])}
+                js_contents[str(k)] = {"label": None,"center": parcel_centers[int(k)],"size":size[int(k)]}
             except KeyError:
-                js_contents[str(k)] = {"label": None, "center": None}
+                js_contents[str(k)] = {"label": None, "center": None, "size": None}
         
         #Atlas-wide Metadata
         js_contents["MetaData"] = {"AtlasName": '', "Description": '',

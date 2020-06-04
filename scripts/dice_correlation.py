@@ -2,6 +2,7 @@ import nibabel as nb
 import numpy as np
 from argparse import ArgumentParser
 from matplotlib import pyplot as plt
+import os
 
 
 def dice_roi(atlas1, atlas2):
@@ -101,7 +102,9 @@ def main():
     output_dir = result.output_dir
 
 
-    # TODO: Add creation of output_dir
+    # Creation of output_dir if it doesn't exit
+    if not os.path.isdir(output_dir):
+        os.makedirs(f"{output_dir}")
 
 
     Dice_matrix, ylabels, xlabels = dice_roi(atlas1,atlas2)

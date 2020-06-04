@@ -33,8 +33,15 @@ def main():
     )
     parser.add_argument(
         "input_dir",
-        help="""The""",
+        help="""The directory where the atlases you wish to analyze are saved.""",
         action="store",
+    )
+    parser.add_argument(
+        "--output_dir",
+        help="""Directory to save the output adjacency matrix. If not specified, then
+        the input directory will be used. Default is None.""",
+        aciton="store",
+        default=None,
     )
     parser.add_argument(
         "--voxel_size",
@@ -76,7 +83,7 @@ def main():
     
     AMI_array = np.zeroes((len(atlas_paths),len(atlas_paths)))
 
-    a=0
+    a=0 #I'm sure there is a better way of doing this
     b=0
 
     for i in atlas_paths:

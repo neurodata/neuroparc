@@ -150,19 +150,15 @@ def main():
                 js_contents[str(k)] = {"label": v, "center": parcel_centers[int(k)]}
             except KeyError:
                 js_contents[str(k)] = {"label": v, "center": None}
+        #Atlas-wide Metadata
+        js_contents["MetaData"] = {"AtlasName": '', "Description": '',
+        "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
+        "Number of Regions":'', "Average Volume Per Region":'', "Year Generated":'',
+        "Generation Method":'', "Source":''}
+
         with open(jsout, 'w') as jso:
             json.dump(js_contents, jso, indent=4)
             
-        #jsf = os.path.join(jsdir, "{}.json".format(brain_name))
-        #with open(jsf) as js:
-        #    js_contents = json.load(js)
-        #    for (k, v) in js_contents.items():
-        #        try:
-        #            js_contents[k] = {"label": v['region'], "center": parcel_centers[int(k)]}
-        #        except KeyError:
-        #            js_contents[k] = {"label": v['region'], "center": None}
-        #    with open(jsout, 'w') as jso:
-        #        json.dump(js_contents, jso, indent=4)
     else:
         js_contents[str(0)] = {"label": "empty", "center":None}
         for (k, v) in parcel_centers.items():
@@ -171,19 +167,16 @@ def main():
                 js_contents[str(k)] = {"label": None,"center": parcel_centers[int(k)],"size":int(size[int(k)])}
             except KeyError:
                 js_contents[str(k)] = {"label": None, "center": None}
+        
+        #Atlas-wide Metadata
+        js_contents["MetaData"] = {"AtlasName": '', "Description": '',
+        "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
+        "Number of Regions":'', "Average Volume Per Region":'', "Year Generated":'',
+        "Generation Method":'', "Source":''}
+                
         with open(jsout, 'w') as jso:
             json.dump(js_contents, jso, indent=4)
             
-        #jsf = os.path.join(specdir, "{}.json".format(brain_name))
-        #with open(jsout) as js:
-        #    js_contents = json.load(js)
-        #    for (k, v) in js_contents.items():
-        #        try:
-        #            js_contents[k] = {"center": parcel_centers[int(k)]}
-        #        except KeyError:
-        #            js_contents[k] = {"center": None}
-        #    with open(jsout, 'w') as jso:
-        #        json.dump(js_contents, jso, indent=4)
 
 
 if __name__ == "__main__":

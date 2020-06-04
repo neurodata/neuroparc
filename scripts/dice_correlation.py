@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import os
 
 
-def dice_roi(atlas1, atlas2):
+def dice_roi(output_dir, atlas1, atlas2):
     """Calculates the dice coefficient for every ROI combination from atlas1 and atlas2
 
     Parameters
@@ -15,6 +15,9 @@ def dice_roi(atlas1, atlas2):
     atlas2 : str
         path to second atlas to compare
     """
+
+    #Create output name for png file
+    png_name=f"DICE_{atlas1.strip('.nii.gz')}_x_{atlas2.strip('.nii.gz')}"
 
     at1 = nb.load(atlas1)
     at2 = nb.load(atlas2)
@@ -42,7 +45,7 @@ def dice_roi(atlas1, atlas2):
     
     #Generate png of heatmap
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(title=png_name)
     im = ax.imshow(Dice)
 
     #axes
@@ -54,13 +57,18 @@ def dice_roi(atlas1, atlas2):
 
     plt.setp(ax.get_xticklabels(), fontsize=4, rotation=45, ha="right", rotation_mode="anchor")
     plt.setp(ax.get_yticklabels(), fontsize=4)
+
+    #ax.set_title(png_name)
     
-    ax.set_aspect(aspect=0.3)
+    # Try to counteract the lopsided amount of ROIs between atlases
+    aspect_ratio=len(labs2)/len(labs1)
+
+    ax.set_aspect(aspect=aspect_ratio)
     #jdhao.github.io/2017/06/03/change-aspect-ratio-in-mpl
 
     plt.show()
 
-    plt.savefig('/outside/woop3.png', dpi=800)
+    plt.savefig(f'{output_dir}/{png_name}.png', dpi=1000)
 
     return Dice, labs1, labs2
     print('Done')
@@ -89,6 +97,14 @@ def main():
         help="""Path to directory you wish to store output
         heatmap.""",
         action="store",
+    )
+    parser.add_argument(
+        "--png_name",
+        help="""Name of the generated png heatmap for the Dice calculations. If
+        None, the name of the file will be 'DICE_<atlas1>_x_<atlas2>.png. Default
+        is None.'"""
+        action="store",
+        default=None,
     )
     
 

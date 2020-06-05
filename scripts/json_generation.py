@@ -22,9 +22,12 @@ def get_centers(brain):
 
     size=dict(zip(labs,size))
         
-    # Bit of a clumsy stop-gap for correcting for lost ROIs due to registration
+    # Bit of a clumsy stop-gap for correcting for lost ROIs due to resampling/registration
     if labs[-1] > len(labs):
         labs = [i for i in range(labs[-1]+1)]
+        for n in labs:
+            if not size.get(n):
+                size[n] = None
 
 
     # Line below throwing memory error. I will likely calculate each layer one at a time
@@ -35,8 +38,8 @@ def get_centers(brain):
     # compute the centers of mass for each ROI
     coords_connectome = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
     
-    return dict(zip(labs, zip(coords_connectome, size)))
-    #return dict(zip(labs, coords_connectome)), size
+    #return dict(zip(labs, zip(coords_connectome, size)))
+    return dict(zip(labs, coords_connectome)), size
 
 def main():
 
@@ -161,8 +164,10 @@ def main():
         for (k, v) in csv_dict.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": v, "center": parcel_centers[int(k)], "size":size[int(k)]}
+                js_contents[str(k)] = {"label": v, "center": parcel_centers[k], "size":int(size[k])}
             except KeyError:
+                js_contents[str(k)] = {"label": v, "center": None, "size": None}
+            except TypeError:
                 js_contents[str(k)] = {"label": v, "center": None, "size": None}
         #Atlas-wide Metadata
         js_contents["MetaData"] = {"AtlasName": '', "Description": '',
@@ -178,8 +183,10 @@ def main():
         for (k, v) in parcel_centers.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": None,"center": parcel_centers[int(k)],"size":size[int(k)]}
+                js_contents[str(k)] = {"label": None,"center": parcel_centers[k],"size":int(size[k])}
             except KeyError:
+                js_contents[str(k)] = {"label": None, "center": None, "size": None}
+            except TypeError:
                 js_contents[str(k)] = {"label": None, "center": None, "size": None}
         
         #Atlas-wide Metadata

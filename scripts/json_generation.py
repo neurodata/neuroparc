@@ -29,14 +29,19 @@ def get_centers(brain):
             if not size.get(n):
                 size[n] = None
 
+    coords_connectome = []
+    for lab in labs:
+        fd_dat = np.asarray(dat == lab).astype('float64')
+        parcel = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
+        coords_connectome.append(nip.find_xyz_cut_coords(parcel))
 
     # Line below throwing memory error. I will likely calculate each layer one at a time
     # and find the center
-    fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
-    parcels = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
-    regions_imgs = image.iter_img(parcels)
+    #fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
+    #parcels = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
+    #regions_imgs = image.iter_img(parcels)
     # compute the centers of mass for each ROI
-    coords_connectome = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
+    #coords_connectomezzz = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
     
     #return dict(zip(labs, zip(coords_connectome, size)))
     return dict(zip(labs, coords_connectome)), size
@@ -113,7 +118,7 @@ def main():
     # Load and organize csv for use in json creation
     if csv_f:
         biglist=[]
-        with open(csv_f, newline='') as csvfile:
+        with open(csv_f, newline='', encoding = 'utf-8-sig') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=',')
             for row in spamreader:
                 biglist.append(row[0])

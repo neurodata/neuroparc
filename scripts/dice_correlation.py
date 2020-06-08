@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import os
 
 
-def dice_roi(output_dir, atlas1, atlas2):
+def dice_roi(output_dir, atlas1, atlas2,png_name):
     """Calculates the dice coefficient for every ROI combination from atlas1 and atlas2
 
     Parameters
@@ -16,8 +16,9 @@ def dice_roi(output_dir, atlas1, atlas2):
         path to second atlas to compare
     """
 
-    #Create output name for png file
-    png_name=f"DICE_{atlas1.strip('.nii.gz')}_x_{atlas2.strip('.nii.gz')}"
+    if not png_name:
+        #Create output name for png file
+        png_name=f"DICE_{atlas1.strip('.nii.gz')}_x_{atlas2.strip('.nii.gz')}"
 
     at1 = nb.load(atlas1)
     at2 = nb.load(atlas2)
@@ -116,6 +117,7 @@ def main():
     atlas1 = result.atlas1
     atlas2 = result.atlas2
     output_dir = result.output_dir
+    png_name = result.png_name
 
 
     # Creation of output_dir if it doesn't exit
@@ -123,7 +125,7 @@ def main():
         os.makedirs(f"{output_dir}")
 
 
-    Dice_matrix, ylabels, xlabels = dice_roi(atlas1,atlas2)
+    Dice_matrix, ylabels, xlabels = dice_roi(output_dir,atlas1,atlas2, png_name)
 
 if __name__ == "__main__":
     main()

@@ -40,7 +40,7 @@ def main():
         "--output_dir",
         help="""Directory to save the output adjacency matrix. If not specified, then
         the input directory will be used. Default is None.""",
-        aciton="store",
+        action="store",
         default=None,
     )
     parser.add_argument(
@@ -57,8 +57,9 @@ def main():
         specified by input_dir. If not specified, then all atlases in the input
         directory will be analyzed. These override the value specified in
         '--voxel_size'. Default is None.""",
-        action="store",
-        default=None,
+        #action="store",
+        #default=None,
+        nargs="+",
     )
 
     # ------- Parse CLI arguments ------- #
@@ -81,20 +82,23 @@ def main():
     
     #Run through all combinations of atlases and calculate adjusted mutual information
     
-    AMI_array = np.zeroes((len(atlas_paths),len(atlas_paths)))
+    AMI_array = np.zeros((len(atlas_paths)+1,len(atlas_paths)+1))
 
     a=0 #I'm sure there is a better way of doing this
     b=0
 
     for i in atlas_paths:
         for j in atlas_paths:
-            AMI = adjusted_mutual_info(i,j)
-            AMI_array[int(a)][int(b)]=float(AMI)
+            if a >= b:
+                AMI = adjusted_mutual_info(i,j)
+                AMI_array[int(a)][int(b)]=float(AMI)
 
             b=b+1
+        b=0
         a=a+1
 
-    #Generate figure
+    #Generate labels for figure
+    print('yo')
 
 
 

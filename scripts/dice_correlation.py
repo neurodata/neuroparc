@@ -1,6 +1,7 @@
 import nibabel as nb
 import numpy as np
 from argparse import ArgumentParser
+import matplotlib
 from matplotlib import pyplot as plt
 import os
 
@@ -29,7 +30,7 @@ def dice_roi(output_dir, atlas1, atlas2,png_name):
     labs1 = np.unique(atlas1)
     labs2 = np.unique(atlas2)
 
-    Dice = np.zeros((labs1.size +1, labs2.size +1))
+    Dice = np.zeros((labs1.size, labs2.size))
 
     for val1 in labs1:
         for val2 in labs2:
@@ -40,24 +41,28 @@ def dice_roi(output_dir, atlas1, atlas2,png_name):
 
             print(f'Dice coefficient for Atlas1 {val1}, Atlas2 {val2} = {dice}')
 
-            if dice >= 1 or dice < 0:
+            if dice > 1 or dice < 0:
                 raise ValueError(f"Dice coefficient is greater than 1 or less than 0 ({dice}) at atlas1: {val1}, atlas2: {val2}")
 
     
     #Generate png of heatmap
 
-    fig, ax = plt.subplots(title=png_name)
-    im = ax.imshow(Dice)
+    fig, ax = plt.subplots()
+    im = ax.imshow(Dice, cmap="gist_heat_r", norm=matplotlib.colors.LogNorm())
 
     #axes
-    ax.set_xticks(np.arange(len(labs2)))
-    ax.set_yticks(np.arange(len(labs1)))
+    ax.set_xticks(np.arange(0,len(labs2), step=10))
+    ax.set_yticks(np.arange(0,len(labs1)))
 
-    ax.set_xticklabels(labs2)
+    
+    ax.set_xticklabels(labs2[0::10])
     ax.set_yticklabels(labs1)
 
-    plt.setp(ax.get_xticklabels(), fontsize=4, rotation=45, ha="right", rotation_mode="anchor")
-    plt.setp(ax.get_yticklabels(), fontsize=4)
+    ax.set_ylabel('ROIs for Yeo-17 atlas')
+    ax.set_xlabel('ROIs for Schaefer-300 atlas')
+
+    plt.setp(ax.get_xticklabels(), fontsize=6, rotation=90, ha="right", rotation_mode="anchor")
+    plt.setp(ax.get_yticklabels(), fontsize=6)
 
     #ax.set_title(png_name)
     
@@ -66,6 +71,9 @@ def dice_roi(output_dir, atlas1, atlas2,png_name):
 
     ax.set_aspect(aspect=aspect_ratio)
     #jdhao.github.io/2017/06/03/change-aspect-ratio-in-mpl
+
+    plt.colorbar(im, aspect=30)
+    fig.tight_layout()
 
     plt.show()
 
@@ -103,7 +111,7 @@ def main():
         "--png_name",
         help="""Name of the generated png heatmap for the Dice calculations. If
         None, the name of the file will be 'DICE_<atlas1>_x_<atlas2>.png. Default
-        is None.'"""
+        is None.'""",
         action="store",
         default=None,
     )

@@ -35,15 +35,6 @@ def get_centers(brain):
         parcel = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
         coords_connectome.append(nip.find_xyz_cut_coords(parcel))
 
-    # Line below throwing memory error. I will likely calculate each layer one at a time
-    # and find the center
-    #fd_dat = np.stack([np.asarray(dat == lab).astype('float64') for lab in labs], axis=3)
-    #parcels = nb.Nifti1Image(dataobj=fd_dat, header=brain.header, affine=brain.affine)
-    #regions_imgs = image.iter_img(parcels)
-    # compute the centers of mass for each ROI
-    #coords_connectomezzz = [nip.find_xyz_cut_coords(img) for img in regions_imgs]
-    
-    #return dict(zip(labs, zip(coords_connectome, size)))
     return dict(zip(labs, coords_connectome)), size
 
 def main():

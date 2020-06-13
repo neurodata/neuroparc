@@ -57,8 +57,6 @@ def main():
         specified by input_dir. If not specified, then all atlases in the input
         directory will be analyzed. These override the value specified in
         '--voxel_size'. Default is None.""",
-        #action="store",
-        #default=None,
         nargs="+",
     )
 

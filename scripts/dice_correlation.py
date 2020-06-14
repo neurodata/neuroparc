@@ -90,16 +90,11 @@ def main():
         description="Script to take already MNI-aligned atlas images and generate json file information."
     )
     parser.add_argument(
-        "atlas1",
-        help="""The path of the mri parcellation
-        file you intend to process.""",
-        action="store",
-    )
-    parser.add_argument(
-        "atlas2",
-        help="""The path of the second mri parcellation
-        file you intend to process.""",
-        action="store",
+        "atlases",
+        help="""List of paths of the mri parcellations
+        file you intend to process. Each atlas will be compared
+        to eachother, so [a,b,c] will generate axb, axc, bxc.""",
+        nargs="+",
     )
     parser.add_argument(
         "output_dir",
@@ -122,8 +117,7 @@ def main():
 
     # ---------------- Parse CLI arguments ---------------- #
     result = parser.parse_args()
-    atlas1 = result.atlas1
-    atlas2 = result.atlas2
+    atlases = result.atlases
     output_dir = result.output_dir
     png_name = result.png_name
 
@@ -132,8 +126,10 @@ def main():
     if not os.path.isdir(output_dir):
         os.makedirs(f"{output_dir}")
 
-
-    Dice_matrix, ylabels, xlabels = dice_roi(output_dir,atlas1,atlas2, png_name)
+    for i in range(len(atlases)):
+        for j in range(len(atlases)):
+            if j > i:
+                Dice_matrix, ylabels, xlabels = dice_roi(output_dir,atlases[i],atlases[j], png_name)
 
 if __name__ == "__main__":
     main()

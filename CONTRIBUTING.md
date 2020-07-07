@@ -8,7 +8,7 @@ There are two main files required for submission of an atlas. The structure shou
 ```
 Atlas_Name
 |-- <atlas_name>_space-<space_name>_res-<resolution>.nii.gz
-`-- <atlas name>-regions-1x1x1.json
+`-- reg_<atlas name>_space-<space_name>-<resolution>.json
 ```
 
 The entire folder will then be placed under the appropriate species subfolder.
@@ -21,7 +21,7 @@ Must be in the NIFTI format and capable of being opened by any standard MRI view
 
 ## File 2: Atlas Information
 
-File Name: `<atlas name>-regions-1x1x1.json`
+File Name: `reg_<atlas name>_space-<space_name>_res-<resolution>.json`
 ```
 {
     "0": {

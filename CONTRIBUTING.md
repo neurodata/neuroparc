@@ -24,18 +24,6 @@ Must be in the NIFTI format and capable of being opened by any standard MRI view
 File Name: `reg_<atlas name>_space-<space_name>_res-<resolution>.json`
 ```
 {
-    "0": {
-        ["color"]: [0, 0, 0] <- default
-        "center": null
-    }
-    "#{x}": {
-        "label": {}
-        ["description"]: {}
-        ["color"]: [{R}, {G}, {B}]
-        "center": [{x}, {y}, {z}]
-        "size": {size}
-    }
-    …
     MetaData: {
         "AtlasName": {Name}
         "Description": {Description}
@@ -48,6 +36,18 @@ File Name: `reg_<atlas name>_space-<space_name>_res-<resolution>.json`
         ["Generation Method"]: {Method}
         ["Source"]: {URL}
     }
+    "0": {
+        ["color"]: [0, 0, 0] <- default
+        "center": null
+    }
+    "#{x}": {
+        "label": {}
+        ["description"]: {}
+        ["color"]: [{R}, {G}, {B}]
+        "center": [{x}, {y}, {z}]
+        "size": {size}
+    }
+    …
 }
 ```
 

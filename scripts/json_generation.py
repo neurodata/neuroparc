@@ -5,12 +5,14 @@ import csv
 import os
 import glob
 import subprocess
+import sys
+from datetime import datetime
 from nilearn import plotting as nip
 from nilearn import image
 from argparse import ArgumentParser
 
 
-def get_centers(brain):
+def get_centers(brain, orig_labs):
     """
     Get coordinate centers given a nifti image loaded with nibabel
     
@@ -23,11 +25,9 @@ def get_centers(brain):
     size=dict(zip(labs,size))
         
     # Bit of a clumsy stop-gap for correcting for lost ROIs due to resampling/registration
-    if labs[-1] > len(labs):
-        labs = [i for i in range(labs[-1]+1)]
-        for n in labs:
-            if not size.get(n):
-                size[n] = None
+    for n in orig_labs:
+        if not size.get(n):
+            size[n] = None
 
     coords_connectome = []
     for lab in labs:
@@ -116,7 +116,10 @@ def main():
                 biglist.append(row[1])
             csv_dict = {biglist[i]: biglist[i+1] for i in range(0, len(biglist), 2)}
 
-    
+    orig = nb.load(input_file)
+    dat = orig.get_data()
+    orig_labs, _ = np.unique(dat, return_counts=True)
+
     if ref_brain:
         # align input file to the dataset grid of the reference brain "master"
         cmd = f"3dresample -input {input_file} -prefix {output_dir}/{output_name}.nii.gz -master {ref_brain}"
@@ -140,61 +143,59 @@ def main():
         nb.save(nb.Nifti1Image(dataobj=newdat, header=im.header, affine=im.affine), filename=output_reg)
 
     
-    if not ref_brain and not output_name: #If you just want a json file to be made, outputname will = input_file name
-        inp = input_file.split("/")[-1]
-        inp = inp.split(".nii")[0]
-        output_name=inp
+    if not ref_brain: #If you just want a json file to be made, outputname will = input_file name
+        if not output_name:
+            inp = input_file.split("/")[-1]
+            inp = inp.split(".nii")[0]
+            output_name=inp
 
         output_reg = input_file #Have the parcel_centers run on input file without any resampling/registering
 
 
 
-    jsout = f"{output_dir}/reg_{output_name}.json"
-    js_contents={}
-        
+    jsout = f"{output_dir}/{output_name}.json"
+    js_contents={"MetaData":{},"rois":{}}
+    roi_sum=0
+    count=0
+    now = datetime.now()
     parcel_im = nb.load(output_reg)
-    parcel_centers, size= get_centers(parcel_im)
+    parcel_centers, size= get_centers(parcel_im,orig_labs)
     if csv_f:
     # find a corresponding json file
-        js_contents[str(0)] = {"label": "empty", "center":None}
+        js_contents['rois'][str(0)] = {"label": "empty", "center":None}
         for (k, v) in csv_dict.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": v, "center": parcel_centers[k], "size":int(size[k])}
+                js_contents['rois'][str(k)] = {"label": v, "center": parcel_centers[k], "size":int(size[k])}
+                roi_sum=roi_sum+size[k]
+                count=count+1
             except KeyError:
-                js_contents[str(k)] = {"label": v, "center": None, "size": None}
+                js_contents['rois'][str(k)] = {"label": v, "center": None, "size": None}
             except TypeError:
-                js_contents[str(k)] = {"label": v, "center": None, "size": None}
-        #Atlas-wide Metadata
-        js_contents["MetaData"] = {"AtlasName": '', "Description": '',
-        "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
-        "Number of Regions":'', "Average Volume Per Region":'', "Year Generated":'',
-        "Generation Method":'', "Source":''}
+                js_contents['rois'][str(k)] = {"label": v, "center": None, "size": None}
 
-        with open(jsout, 'w') as jso:
-            json.dump(js_contents, jso, indent=4)
             
     else:
-        js_contents[str(0)] = {"label": "empty", "center":None}
+        js_contents['rois'][str(0)] = {"label": "empty", "center":None}
         for (k, v) in parcel_centers.items():
             k=int(k)
             try:
-                js_contents[str(k)] = {"label": None,"center": parcel_centers[k],"size":int(size[k])}
+                js_contents['rois'][str(k)] = {"label": None,"center": parcel_centers[k],"size":int(size[k])}
+                roi_sum=roi_sum+size[k]
+                count=count+1
             except KeyError:
-                js_contents[str(k)] = {"label": None, "center": None, "size": None}
+                js_contents['rois'][str(k)] = {"label": None, "center": None, "size": None}
             except TypeError:
-                js_contents[str(k)] = {"label": None, "center": None, "size": None}
+                js_contents['rois'][str(k)] = {"label": None, "center": None, "size": None}
         
-        #Atlas-wide Metadata
-        js_contents["MetaData"] = {"AtlasName": '', "Description": '',
-        "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
-        "Number of Regions":'', "Average Volume Per Region":'', "Year Generated":'',
-        "Generation Method":'', "Source":''}
+    #Atlas-wide Metadata
+    js_contents["MetaData"] = {"AtlasName": "", "Description": '',
+    "Native Coordinate Space": '', "Hierarchical": '', "Symmetrical": '',
+    "Number of Regions": str(count), "Average Volume Per Region": str(float(roi_sum/count)), "Year Generated": str(now.year),
+    "Generation Method":'', "Source":''}
                 
-        with open(jsout, 'w') as jso:
-            json.dump(js_contents, jso, indent=4)
+    with open(jsout, 'w') as jso:
+        json.dump(js_contents, jso, indent=4)
             
-
-
 if __name__ == "__main__":
     main()

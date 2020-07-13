@@ -145,7 +145,7 @@ def main():
     if not os.path.isdir(output_dir):
         os.makedirs(f"{output_dir}")
 
-    for i in range(15,len(atlases)):
+    for i in range(len(atlases)):
         for j in range(len(atlases)):
             if j > i:
                 Dice_matrix, ylabels, xlabels = dice_roi(input_dir,output_dir,atlases[i],atlases[j])

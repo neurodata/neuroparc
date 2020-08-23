@@ -23,37 +23,31 @@ Must be in the NIFTI format and capable of being opened by any standard MRI view
 File Name: `<atlas name>-regions-1x1x1.json`
 ```
 {
-    "0": {
-        ["color"]: [0, 0, 0] <- default
-        "center": null
-    }
-    "#{x}": {
-        "label": {}
-        ["description"]: {}
-        ["color"]: [{R}, {G}, {B}]
-        "center": [{x}, {y}, {z}]
-        "size": {size}
-    }
-    …
-    MetaData: {
-        "AtlasName": {Name}
-        "Description": {Description}
-        "Native Coordinate Space": {Coordinate Space}
-        ["Hierarchical"]: {yes, no}
-        ["Symmetrical"]: {yes,no}
-        ["Number of Regions"]: {# of regions}
-        ["Average Volume Per Region"]: {Ave Vol}
-        ["Year Generated"]: {Year}
-        ["Generation Method"]: {Method}
-        ["Source"]: {URL}
-    }
+    "MetaData": {
+        "AtlasName": {Name},
+        "Description": {Description},
+        "Native Coordinate Space": {Coordinate Space},
+        "Hierarchical": {yes, no},
+        "Symmetrical": {yes, no},
+        "Number of Regions": {# of regions},
+        "Average Volume Per Region": {Ave Vol},
+        "Year Generated": {Year},
+        "Generation Method": {Method},
+        "Source": {URL}
+    },
+    "rois": {
+	"{x}": {
+            "label": {},
+	    ["description"] = {}
+	    ["color"]: [{R}, {G}, {B}],
+            "center": [{x}, {y}, {z}],
+            "size": {size}
+        },
+	...
+     }
 }
-```
 
 Fields (all required unless specified):
-- Region 0:
-    - color: [0, 0, 0]. The color for empty space must be black, specified in RGB values.
-    - center: null. Must be null for empty space.
 - Region <Number of region>
     - label: Provide a common name for the region. Numerical values are acceptable if the atlas is generative.
     - OPTIONAL description: If desired, a brief description of the importance of the region can be specified here.

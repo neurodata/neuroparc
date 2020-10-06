@@ -16,7 +16,7 @@ outputs:
 - registered parcellation
 
 ## dice_correlation.py
-Calculates dice correlation of multiple parcellations
+Calculates the dice correlation value of for each set of ROIs between two parcellations. These dice values are then saved to a csv file and used to create a heatmap png. If more than two parcellations are provided, the script will itterate through all possible pairs of parcellations, creating the heatmap and csv file for each pair.
 
 inputs:
 - 2+ parcellation files (.nii or .nii.gz)
@@ -24,14 +24,16 @@ inputs:
 
 outputs:
 - heatmap png of each combination of atlases
+- csv file containing all dice correlation values
 
 ## adjusted_mutual.py
-Calculates
+Calculates the adjusted mutual information (AMI) score between parcellations. If more than 2 parcellations are input, then it will create a heatmap png containing the AMI of each parcellation pair. A csv file is also saved containing the data used for the heatmap. Input parcellations must have same voxel size and orientation for proper results.
 
 inputs:
-- parcellations (can use all in a given input directory)
+- parcellations (if an input directory is given then all eligible parcellations will be used)
 - [optional] voxel_size
-- [optional] figure_name
+- [optional] name to use for output files
 
 outputs:
-- heatmap png containing adjusted mutual of each 
+- heatmap png containing adjusted mutual of each
+- csv file containing the AMI for each pair of parcellations

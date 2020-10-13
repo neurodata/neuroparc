@@ -34,5 +34,5 @@ This repository contains a number of useful parcellations, templates, masks, and
 | Schaefer2018 - 1000 (Yeo 7) | 1000 | No | No | No | Automatic using gwMRF | 1055.685 | Yeo 7 | Gradient-weighted Markov Random Fields (gwMRF) to group similar fMRI regions (dependent on # of regions specified) | http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf | 2017 |
 | Schaefer2018 - 1000 | 1000 | No | No | No | Automatic using gwMRF | 1055.685 |  | Gradient-weighted Markov Random Fields (gwMRF) to group similar fMRI regions (dependent on # of regions specified) | http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf | 2017 |
 | Slab | 1068 |  |  | No |  | 493.719 |  |  | https://www.nitrc.org/projects/kessler_jama16/  |  |
-| Talairach | 1105 | No | Yes | Yes | Semi-automated? | 1698.114 | Talairach coordinates | A hierarchical atlas split into 5 leves: Hemisphere, Lobe, Gyrus, Tissue Type, and Cell Type | https://www.ncbi.nlm.nih.gov/pubmed/7008525 | 1980 |
+| Talairach | 1105 | No | Yes | Yes | Semi-automated? | 1698.114 | Talairach coordinates | A hierarchical atlas split into 5 leves: Hemisphere, Lobe, Gyrus, Tissue Type, and Cell Type | https://www.ncbi.nlm.nih.gov/pubmed/7008525 | 1980|
 

@@ -1,6 +1,6 @@
 # Script Descriptions
 
-There are three major programs used in the creation of an atlas. Each script has an accompanying Jupyter Notebook file which walks you through and example run. [TODO: Provide example data to run?]
+There are three major programs used in the creation of an atlas. Each script has an accompanying Jupyter Notebook file which walks you through and example run.
 
 ## json_generation.py
 Jupyter Notebook Tutorial: Json_Generation_Tutorial.ipynb

@@ -1,0 +1,457 @@
+{
+    "MetaData": {
+        "AtlasName": "HarvardOxford Cortical",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "no",
+        "Symmetrical": "yes",
+        "Number of Regions": "49",
+        "Average Volume Per Region": "18421.0",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": "https://scalablebrainatlas.incf.org/human/HOA06"
+    },
+    "rois": {
+        "0": {
+            "label": "null",
+            "center": [
+                -0.08446266427368698,
+                -18.0051493078671,
+                18.03635141430776
+            ],
+            "size": 770910
+        },
+        "1": {
+            "label": "Frontal_Pole",
+            "center": [
+                2.6887846143678473,
+                52.536778798493174,
+                7.863591302623746
+            ],
+            "size": 15134
+        },
+        "2": {
+            "label": "Insular_Cortex",
+            "center": [
+                37.38988095238095,
+                2.529761904761898,
+                -0.108630952380949
+            ],
+            "size": 2678
+        },
+        "3": {
+            "label": "Superior_Frontal_Gyrus",
+            "center": [
+                -0.12179146751637404,
+                18.690741724198972,
+                56.424499911488766
+            ],
+            "size": 5650
+        },
+        "4": {
+            "label": "Middle_Frontal_Gyrus",
+            "center": [
+                -38.13807245386192,
+                18.481203007518786,
+                42.03691045796309
+            ],
+            "size": 5667
+        },
+        "5": {
+            "label": "Inferior_Frontal_Gyrus_pars_triangularis",
+            "center": [
+                -49.66358024691357,
+                28.56481481481481,
+                8.641975308641975
+            ],
+            "size": 1205
+        },
+        "6": {
+            "label": "Inferior_Frontal_Gyrus_pars_opercularis",
+            "center": [
+                -50.57180156657964,
+                14.686684073107045,
+                15.469973890339418
+            ],
+            "size": 1452
+        },
+        "7": {
+            "label": "Subcallosal_Cortex",
+            "center": [
+                -0.03723586521986988,
+                -11.401256424900055,
+                49.8076527698458
+            ],
+            "size": 8755
+        },
+        "8": {
+            "label": "Temporal_Pole",
+            "center": [
+                40.69240453210239,
+                12.945866554762915,
+                -29.62903902643727
+            ],
+            "size": 4749
+        },
+        "9": {
+            "label": "Superior_Temporal_Gyrus_anterior_division",
+            "center": [
+                -56.1142857142857,
+                -4.0428571428571445,
+                -8.085714285714289
+            ],
+            "size": 558
+        },
+        "10": {
+            "label": "Superior_Temporal_Gyrus_posterior_division",
+            "center": [
+                61.59615384615385,
+                -24.024038461538467,
+                1.7163461538461604
+            ],
+            "size": 809
+        },
+        "11": {
+            "label": "Middle_Temporal_Gyrus_anterior_division",
+            "center": [
+                -57.56347438752783,
+                -4.106904231625833,
+                -22.111358574610243
+            ],
+            "size": 858
+        },
+        "12": {
+            "label": "Middle_Temporal_Gyrus_posterior_division",
+            "center": [
+                -61.060781476121576,
+                -27.418234442836464,
+                -10.962373371924748
+            ],
+            "size": 2739
+        },
+        "13": {
+            "label": "Middle_Temporal_Gyrus_temporoocipital_part",
+            "center": [
+                58.2960413080895,
+                -49.117039586919105,
+                1.506024096385545
+            ],
+            "size": 2028
+        },
+        "14": {
+            "label": "Inferior_Temporal_Gyrus_anterior_division",
+            "center": [
+                -48.125373134328356,
+                -5.12835820895522,
+                -39.223880597014926
+            ],
+            "size": 662
+        },
+        "15": {
+            "label": "Inferior_Temporal_Gyrus_posterior_division",
+            "center": [
+                -53.50442477876106,
+                -28.527040314650932,
+                -25.956735496558508
+            ],
+            "size": 1966
+        },
+        "16": {
+            "label": "Inferior_Temporal_Gyrus_temporoocipital_part",
+            "center": [
+                54.125480153649164,
+                -49.85915492957747,
+                -16.76056338028169
+            ],
+            "size": 1479
+        },
+        "17": {
+            "label": "Postcentral_Gyrus",
+            "center": [
+                -2.6411815812337096,
+                -27.15204170286708,
+                52.12829423689546
+            ],
+            "size": 6906
+        },
+        "18": {
+            "label": "Superior_Parietal_Lobule",
+            "center": [
+                29.135501355013552,
+                -47.78590785907859,
+                58.943089430894304
+            ],
+            "size": 2936
+        },
+        "19": {
+            "label": "Supramarginal_Gyrus_anterior_division",
+            "center": [
+                -56.66666666666666,
+                -32.83438155136268,
+                37.25576519916143
+            ],
+            "size": 1755
+        },
+        "20": {
+            "label": "Supramarginal_Gyrus_posterior_division",
+            "center": [
+                55.21619433198381,
+                -40.45182186234818,
+                33.616194331983806
+            ],
+            "size": 2299
+        },
+        "21": {
+            "label": "Angular_Gyrus",
+            "center": [
+                51.931926480599046,
+                -51.86521443158611,
+                32.34989788972089
+            ],
+            "size": 2419
+        },
+        "22": {
+            "label": "Lateral_Occipital_Cortex_superior_division",
+            "center": [
+                -32.10348298771895,
+                -72.8391383128649,
+                37.89691966982082
+            ],
+            "size": 9780
+        },
+        "23": {
+            "label": "Lateral_Occipital_Cortex_inferior_division",
+            "center": [
+                45.485574572127135,
+                -73.96577017114915,
+                -1.5980440097799544
+            ],
+            "size": 4087
+        },
+        "24": {
+            "label": "Intracalcaring_Cortex",
+            "center": [
+                1.5906515580736595,
+                -74.3371104815864,
+                8.196883852691215
+            ],
+            "size": 1413
+        },
+        "25": {
+            "label": "Frontal_Medial_Cortex",
+            "center": [
+                0.28280773143438864,
+                43.32044760935909,
+                -18.478128179043743
+            ],
+            "size": 984
+        },
+        "26": {
+            "label": "Justapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex)",
+            "center": [
+                0.5144781144781092,
+                -2.744781144781143,
+                56.95488215488217
+            ],
+            "size": 1485
+        },
+        "27": {
+            "label": "Subcallosal_Cortex",
+            "center": [
+                -0.06571936056838013,
+                20.648312611012443,
+                -14.927175843694492
+            ],
+            "size": 1126
+        },
+        "28": {
+            "label": "Paracingulate_Gyrus",
+            "center": [
+                0.2575549450549488,
+                36.52815934065933,
+                21.97390109890111
+            ],
+            "size": 2912
+        },
+        "29": {
+            "label": "Cingulate_Gyrus_anterior_division",
+            "center": [
+                0.8317901234567842,
+                18.269290123456784,
+                24.389660493827165
+            ],
+            "size": 2593
+        },
+        "30": {
+            "label": "Cingulate_Gyrus_posterior_division",
+            "center": [
+                0.7734668335419315,
+                -36.56153525239884,
+                29.948268669169792
+            ],
+            "size": 2397
+        },
+        "31": {
+            "label": "Precuneous_Cortex",
+            "center": [
+                0.9504632929436951,
+                -59.26193870277976,
+                38.092658588738416
+            ],
+            "size": 5613
+        },
+        "32": {
+            "label": "Cuneal_Cortex",
+            "center": [
+                1.06548100242523,
+                -79.46321746160065,
+                27.542441390460795
+            ],
+            "size": 1237
+        },
+        "33": {
+            "label": "Frontal_Orbital_Cortex",
+            "center": [
+                -29.566666666666663,
+                23.701190476190476,
+                -16.508333333333333
+            ],
+            "size": 3122
+        },
+        "34": {
+            "label": "Parahippocampal_Gyrus_anterior_division",
+            "center": [
+                22.40548780487805,
+                -7.975609756097555,
+                -30.24390243902439
+            ],
+            "size": 1238
+        },
+        "35": {
+            "label": "Parahippocampal_Gyrus_posterior_division",
+            "center": [
+                -21.892307692307696,
+                -32.35384615384615,
+                -16.933333333333337
+            ],
+            "size": 709
+        },
+        "36": {
+            "label": "Lingual_Gyrus",
+            "center": [
+                1.4701159678858176,
+                -64.65239369610467,
+                -5.157300029735353
+            ],
+            "size": 3364
+        },
+        "37": {
+            "label": "Temporal_Fusiform_Cortex_anterior_division",
+            "center": [
+                -31.69085173501577,
+                -4.618296529968461,
+                -41.89274447949527
+            ],
+            "size": 609
+        },
+        "38": {
+            "label": "Temporal_Fusiform_Cortex_posterior_division",
+            "center": [
+                -36.01162790697674,
+                -29.59302325581396,
+                -24.932558139534883
+            ],
+            "size": 1579
+        },
+        "39": {
+            "label": "Temporal_Occipital_Fusiform_Cortex",
+            "center": [
+                35.065030674846625,
+                -50.073619631901835,
+                -16.674846625766875
+            ],
+            "size": 1467
+        },
+        "40": {
+            "label": "Occipital_Fusiform_Gyrus",
+            "center": [
+                -26.598712446351925,
+                -76.56866952789699,
+                -13.690987124463518
+            ],
+            "size": 1820
+        },
+        "41": {
+            "label": "Frontal_Operculum_Cortex",
+            "center": [
+                -39.56619718309858,
+                18.422535211267615,
+                4.61408450704225
+            ],
+            "size": 668
+        },
+        "42": {
+            "label": "Central_Opercular_Cortex",
+            "center": [
+                -47.95092024539878,
+                -8.541922290388555,
+                11.760736196319016
+            ],
+            "size": 1855
+        },
+        "43": {
+            "label": "Parietal_Operculum_Cortex",
+            "center": [
+                -48.384479717813065,
+                -31.76014109347443,
+                20.41622574955909
+            ],
+            "size": 1105
+        },
+        "44": {
+            "label": "Planum_Polare",
+            "center": [
+                48.13262599469496,
+                -3.458885941644567,
+                -7.15649867374006
+            ],
+            "size": 735
+        },
+        "45": {
+            "label": "Heschl's_Gyrus_(includes_H1_and_H2)",
+            "center": [
+                -45.24271844660194,
+                -20.304207119741108,
+                7.100323624595475
+            ],
+            "size": 591
+        },
+        "46": {
+            "label": "Planum_Temporale",
+            "center": [
+                -52.729203539823004,
+                -29.929203539823007,
+                10.941592920353983
+            ],
+            "size": 1005
+        },
+        "47": {
+            "label": "Supracalcarine_Cortex",
+            "center": [
+                1.2571428571428527,
+                -79.32571428571428,
+                13.177142857142854
+            ],
+            "size": 265
+        },
+        "48": {
+            "label": "Occipital_Pole",
+            "center": [
+                -0.04794520547945069,
+                -95.82876712328766,
+                7.551750380517504
+            ],
+            "size": 5256
+        }
+    }
+}

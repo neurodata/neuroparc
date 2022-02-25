@@ -1,0 +1,52 @@
+{
+    "MetaData": {
+        "AtlasName": "Tissue",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "no",
+        "Symmetrical": "yes",
+        "Number of Regions": "4",
+        "Average Volume Per Region": "1805258.0",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": ""
+    },
+    "rois": {
+        "0": {
+            "label": "null+csf",
+            "center": [
+                -0.8611341198386242,
+                -16.120357079764304,
+                21.461971759297356
+            ],
+            "size": 5393937
+        },
+        "1": {
+            "label": "Gray_Matter",
+            "center": [
+                0.37784337595111595,
+                -16.26480006223416,
+                11.111188903816682
+            ],
+            "size": 476783
+        },
+        "2": {
+            "label": "Gray_Matter_White_Matter_Boundary",
+            "center": [
+                0.604692170368196,
+                -25.09441659085779,
+                6.177236817805621
+            ],
+            "size": 734217
+        },
+        "3": {
+            "label": "White_Matter",
+            "center": [
+                0.6163618554741817,
+                -21.386407678675567,
+                13.410370240421557
+            ],
+            "size": 616095
+        }
+    }
+}

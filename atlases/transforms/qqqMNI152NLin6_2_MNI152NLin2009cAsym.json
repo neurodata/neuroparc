@@ -1,0 +1,4 @@
+{
+	"Description": "A non-linear transform from MNI152NLin2009cAsym to MNI152NLin6 template",
+	"Source": "https://figshare.com/articles/MNI_T1_6thGen_NLIN_to_MNI_2009b_NLIN_ANTs_transform/3502238"
+}

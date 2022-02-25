@@ -1,0 +1,88 @@
+{
+    "MetaData": {
+        "AtlasName": "Yeo-7",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "no",
+        "Symmetrical": "yes",
+        "Number of Regions": "8",
+        "Average Volume Per Region": "902629.0",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174820/"
+    },
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": [
+                -0.5930494825211667,
+                -17.848071139176852,
+                18.79718031508797
+            ],
+            "size": 6693347
+        },
+        "1": {
+            "label": "1_Visual_Area",
+            "center": [
+                27.649889444897013,
+                -68.69399511230071,
+                2.30126265564995
+            ],
+            "size": 65695
+        },
+        "2": {
+            "label": "2_Somatomotor_Area",
+            "center": [
+                -37.722550589605476,
+                -20.416800116465282,
+                36.416188673751634
+            ],
+            "size": 68196
+        },
+        "3": {
+            "label": "3_Dorsal_Area",
+            "center": [
+                37.937393598910454,
+                -53.12163772557031,
+                30.112061627511068
+            ],
+            "size": 58278
+        },
+        "4": {
+            "label": "4_Ventral_Area",
+            "center": [
+                43.13419032645889,
+                9.140201609174142,
+                1.3006566170350453
+            ],
+            "size": 58934
+        },
+        "5": {
+            "label": "5_Lymbic_Area",
+            "center": [
+                36.915787240812435,
+                -1.4657156493609875,
+                -34.08474306623535
+            ],
+            "size": 58137
+        },
+        "6": {
+            "label": "6_Frontoparietal_Area",
+            "center": [
+                37.39850037834491,
+                35.54044851069685,
+                21.2381165302332
+            ],
+            "size": 83222
+        },
+        "7": {
+            "label": "7_Default_Network_Area",
+            "center": [
+                -22.112781183471412,
+                38.76356221304536,
+                19.1729807371688
+            ],
+            "size": 135223
+        }
+    }
+}

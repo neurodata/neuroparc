@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c67d9e45441482e01e28676635d426fe7b87c0c31cd0d9ea6a451c0c165805a9
-size 143
+0,empty
+1,1_Visual_Area
+2,2_Somatomotor_Area
+3,3_Dorsal_Area
+4,4_Ventral_Area
+5,5_Lymbic_Area
+6,6_Frontoparietal_Area
+7,7_Default_Network_Area

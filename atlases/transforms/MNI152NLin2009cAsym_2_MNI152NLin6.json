@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbce85e4f83796e0da7fe6e295f55b35ee2b157731c14f0b04bfca53f60b0925
-size 198
+{
+
+	"Description": "A non-linear transform from MNI152NLin6 to MNI152NLin2009cAsym template",
+	"Source": "https://figshare.com/articles/MNI_T1_6thGen_NLIN_to_MNI_2009b_NLIN_ANTs_transform/3502238"
+}

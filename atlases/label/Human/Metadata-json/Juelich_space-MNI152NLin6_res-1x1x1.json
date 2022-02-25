@@ -1,3 +1,952 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:647be266e9c20bb62a44f95b6be50f32310c97f94a945662fa971a4a5a2dcdc2
-size 26379
+{
+    "MetaData": {
+        "AtlasName": "Juelich",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "yes",
+        "Symmetrical": "no",
+        "Number of Regions": "104",
+        "Average Volume Per Region": "69433.0",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": "https://scalablebrainatlas.incf.org/human/EAZ05_v18"
+    },
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": [
+                -0.6040387606600746,
+                -16.08277105346278,
+                17.618452434162307
+            ],
+            "size": 6712632
+        },
+        "1": {
+            "label": "L_Anterior_intra-parietal_sulcus_hIP1",
+            "center": [
+                -37.07556935817806,
+                -49.7463768115942,
+                38.08799171842651
+            ],
+            "size": 3864
+        },
+        "2": {
+            "label": "R_Anterior_intra-parietal_sulcus_hIP1",
+            "center": [
+                37.62456747404844,
+                -48.0916955017301,
+                37.064013840830455
+            ],
+            "size": 2320
+        },
+        "3": {
+            "label": "L_Anterior_intra-parietal_sulcus_hIP2",
+            "center": [
+                -45.672995780590725,
+                -40.65189873417722,
+                40.88396624472574
+            ],
+            "size": 1896
+        },
+        "4": {
+            "label": "R_Anterior_intra-parietal_sulcus_hIP2",
+            "center": [
+                42.780701754385966,
+                -39.359649122807014,
+                46.1140350877193
+            ],
+            "size": 912
+        },
+        "5": {
+            "label": "L_Anterior_intra-parietal_sulcus_hIP3",
+            "center": [
+                -31.362318840579718,
+                -51.68115942028986,
+                44.33333333333333
+            ],
+            "size": 2248
+        },
+        "6": {
+            "label": "R_Anterior_intra-parietal_sulcus_hIP3",
+            "center": [
+                33.38996763754045,
+                -51.96925566343042,
+                46.63268608414239
+            ],
+            "size": 2496
+        },
+        "7": {
+            "label": "L_Amygdala_centromedial_group",
+            "center": [
+                -24.184210526315795,
+                -10.149122807017548,
+                -8.043859649122808
+            ],
+            "size": 464
+        },
+        "8": {
+            "label": "R_Amygdala_centromedial_group",
+            "center": [
+                26.246268656716417,
+                -9.604477611940297,
+                -7.932835820895519
+            ],
+            "size": 536
+        },
+        "9": {
+            "label": "L_Amygdala_laterobasal_group",
+            "center": [
+                -26.861904761904768,
+                -5.2873015873015845,
+                -23.36349206349206
+            ],
+            "size": 2520
+        },
+        "10": {
+            "label": "R_Amygdala_laterobasal_group",
+            "center": [
+                29.37172011661808,
+                -3.6720116618075735,
+                -23.637026239067055
+            ],
+            "size": 2744
+        },
+        "11": {
+            "label": "L_Amygdala_superficial_group",
+            "center": [
+                -18.691919191919197,
+                -4.621212121212125,
+                -16.065656565656568
+            ],
+            "size": 1584
+        },
+        "12": {
+            "label": "R_Amygdala_superficial_group",
+            "center": [
+                20.992227979274617,
+                -3.5051813471502555,
+                -13.805699481865283
+            ],
+            "size": 1544
+        },
+        "13": {
+            "label": "L_Broca's_area_BA44",
+            "center": [
+                -51.3028720626632,
+                11.680156657963437,
+                18.828981723237604
+            ],
+            "size": 12264
+        },
+        "14": {
+            "label": "R_Broca's_area_BA44",
+            "center": [
+                53.44459833795014,
+                11.861957525392427,
+                16.700369344413673
+            ],
+            "size": 8696
+        },
+        "15": {
+            "label": "L_Broca's_area_BA45",
+            "center": [
+                -51.645454545454555,
+                27.74545454545455,
+                14.156363636363636
+            ],
+            "size": 8808
+        },
+        "16": {
+            "label": "R_Broca's_area_BA45",
+            "center": [
+                52.4140201394268,
+                27.245933384972886,
+                11.146785437645235
+            ],
+            "size": 10336
+        },
+        "17": {
+            "label": "L_Hippocampus_cornu_ammonis",
+            "center": [
+                -28.686107470511132,
+                -25.787024901703802,
+                -12.70707732634338
+            ],
+            "size": 6104
+        },
+        "18": {
+            "label": "R_Hippocampus_cornu_ammonis",
+            "center": [
+                29.443209876543207,
+                -23.51234567901234,
+                -12.322222222222223
+            ],
+            "size": 6480
+        },
+        "19": {
+            "label": "L_Hippocampus_entorhinal_cortex",
+            "center": [
+                -23.10910518053376,
+                -8.66326530612244,
+                -33.96938775510204
+            ],
+            "size": 5096
+        },
+        "20": {
+            "label": "R_Hippocampus_entorhinal_cortex",
+            "center": [
+                23.59947643979058,
+                -5.400523560209422,
+                -33.596858638743456
+            ],
+            "size": 6112
+        },
+        "21": {
+            "label": "L_Hippocampus_dentate_gyrus",
+            "center": [
+                -24.785714285714292,
+                -32.64285714285714,
+                -5.328571428571422
+            ],
+            "size": 592
+        },
+        "22": {
+            "label": "R_Hippocampus_dentate_gyrus",
+            "center": [
+                24.401408450704224,
+                -31.035211267605632,
+                -3.9929577464788792
+            ],
+            "size": 576
+        },
+        "23": {
+            "label": "L_Hippocampus_hippocampal-amygdaloid_transition_area",
+            "center": [
+                -19.5,
+                -12.5,
+                -10.5
+            ],
+            "size": 32
+        },
+        "24": {
+            "label": "R_Hippocampus_hippocampal-amygdaloid_transition_area",
+            "center": [
+                17.5,
+                -10.5,
+                -10.5
+            ],
+            "size": 8
+        },
+        "25": {
+            "label": "L_Hippocampus_subiculum",
+            "center": [
+                -19.501862197392924,
+                -28.07914338919926,
+                -14.734636871508378
+            ],
+            "size": 4296
+        },
+        "26": {
+            "label": "R_Hippocampus_subiculum",
+            "center": [
+                20.30952380952381,
+                -26.1959706959707,
+                -14.66117216117216
+            ],
+            "size": 4384
+        },
+        "27": {
+            "label": "L_Inferior_parietal_lobule_PF",
+            "center": [
+                -58.319639278557105,
+                -39.125250501002,
+                34.01102204408818
+            ],
+            "size": 8016
+        },
+        "28": {
+            "label": "R_Inferior_parietal_lobule_PF",
+            "center": [
+                61.14192139737991,
+                -33.7052401746725,
+                31.13100436681222
+            ],
+            "size": 7328
+        },
+        "29": {
+            "label": "L_Inferior_parietal_lobule_PFcm",
+            "center": [
+                -48.94383561643835,
+                -38.29178082191781,
+                22.04794520547945
+            ],
+            "size": 2920
+        },
+        "30": {
+            "label": "R_Inferior_parietal_lobule_PFcm",
+            "center": [
+                50.393081761006286,
+                -33.21069182389937,
+                24.65094339622641
+            ],
+            "size": 2544
+        },
+        "31": {
+            "label": "L_Inferior_parietal_lobule_PFm",
+            "center": [
+                -53.05629139072849,
+                -52.20419426048565,
+                38.56843267108168
+            ],
+            "size": 3792
+        },
+        "32": {
+            "label": "R_Inferior_parietal_lobule_PFm",
+            "center": [
+                54.12558139534884,
+                -45.41162790697675,
+                37.551162790697674
+            ],
+            "size": 6880
+        },
+        "33": {
+            "label": "L_Inferior_parietal_lobule_PFop",
+            "center": [
+                -57.18100358422939,
+                -26.23476702508961,
+                24.39605734767025
+            ],
+            "size": 2232
+        },
+        "34": {
+            "label": "R_Inferior_parietal_lobule_PFop",
+            "center": [
+                54.28714859437751,
+                -21.214859437751002,
+                27.98192771084338
+            ],
+            "size": 1992
+        },
+        "35": {
+            "label": "L_Inferior_parietal_lobule_PFt",
+            "center": [
+                -52.093582887700535,
+                -25.056149732620327,
+                34.42513368983957
+            ],
+            "size": 3016
+        },
+        "36": {
+            "label": "R_Inferior_parietal_lobule_PFt",
+            "center": [
+                52.48461538461538,
+                -25.469230769230762,
+                39.96666666666667
+            ],
+            "size": 3120
+        },
+        "37": {
+            "label": "L_Inferior_parietal_lobule_Pga",
+            "center": [
+                -45.26962676962677,
+                -61.3931788931789,
+                38.46525096525096
+            ],
+            "size": 6248
+        },
+        "38": {
+            "label": "R_Inferior_parietal_lobule_Pga",
+            "center": [
+                50.892497712717294,
+                -55.506404391582805,
+                33.74153705397987
+            ],
+            "size": 8744
+        },
+        "39": {
+            "label": "L_Inferior_parietal_lobule_PGp",
+            "center": [
+                -42.487711213517656,
+                -74.60291858678956,
+                29.61827956989248
+            ],
+            "size": 10416
+        },
+        "40": {
+            "label": "R_Inferior_parietal_lobule_PGp",
+            "center": [
+                45.30754426481909,
+                -71.18360277136259,
+                30.15434949961508
+            ],
+            "size": 10400
+        },
+        "41": {
+            "label": "L_Primary_auditory_cortex_TE1.0",
+            "center": [
+                -48.92718446601941,
+                -20.762135922330103,
+                6.072815533980588
+            ],
+            "size": 1656
+        },
+        "42": {
+            "label": "R_Primary_auditory_cortex_TE1.0",
+            "center": [
+                50.14516129032258,
+                -14.346774193548384,
+                5.532258064516128
+            ],
+            "size": 1984
+        },
+        "43": {
+            "label": "L_Primary_auditory_cortex_TE1.1",
+            "center": [
+                -40.66969696969696,
+                -30.9969696969697,
+                10.324242424242428
+            ],
+            "size": 1320
+        },
+        "44": {
+            "label": "R_Primary_auditory_cortex_TE1.1",
+            "center": [
+                40.574074074074076,
+                -26.586419753086417,
+                10.537037037037038
+            ],
+            "size": 1296
+        },
+        "45": {
+            "label": "L_Primary_auditory_cortex_TE1.2",
+            "center": [
+                -54.35074626865671,
+                -9.022388059701498,
+                1.246268656716424
+            ],
+            "size": 1072
+        },
+        "46": {
+            "label": "R_Primary_auditory_cortex_TE1.2",
+            "center": [
+                56.0,
+                -2.739999999999995,
+                1.039999999999992
+            ],
+            "size": 800
+        },
+        "47": {
+            "label": "L_Primary_motor_cortex_BA4a",
+            "center": [
+                -7.12740384615384,
+                -32.96634615384616,
+                64.69711538461539
+            ],
+            "size": 8520
+        },
+        "48": {
+            "label": "R_Primary_motor_cortex_BA4a",
+            "center": [
+                16.11739130434782,
+                -28.436956521739134,
+                63.5
+            ],
+            "size": 7416
+        },
+        "49": {
+            "label": "L_Primary_motor_cortex_BA4p",
+            "center": [
+                -36.64662756598241,
+                -20.71114369501467,
+                46.239002932551315
+            ],
+            "size": 2880
+        },
+        "50": {
+            "label": "R_Primary_motor_cortex_BA4p",
+            "center": [
+                36.19736842105263,
+                -20.828947368421055,
+                47.25
+            ],
+            "size": 2560
+        },
+        "51": {
+            "label": "L_Primary_somatosensory_cortex_BA1",
+            "center": [
+                -44.89101123595506,
+                -26.423595505617982,
+                55.87528089887641
+            ],
+            "size": 7152
+        },
+        "52": {
+            "label": "R_Primary_somatosensory_cortex_BA1",
+            "center": [
+                45.53760282021152,
+                -25.4165687426557,
+                56.277908343125745
+            ],
+            "size": 6824
+        },
+        "53": {
+            "label": "L_Primary_somatosensory_cortex_BA2",
+            "center": [
+                -40.04761904761904,
+                -35.31904761904762,
+                50.792857142857144
+            ],
+            "size": 6832
+        },
+        "54": {
+            "label": "R_Primary_somatosensory_cortex_BA2",
+            "center": [
+                36.41328210757409,
+                -35.29253567508232,
+                52.28155872667398
+            ],
+            "size": 7296
+        },
+        "55": {
+            "label": "L_Primary_somatosensory_cortex_BA3a",
+            "center": [
+                -35.33084577114428,
+                -22.59950248756219,
+                38.942786069651746
+            ],
+            "size": 3224
+        },
+        "56": {
+            "label": "R_Primary_somatosensory_cortex_BA3a",
+            "center": [
+                32.532745591939545,
+                -22.80226700251889,
+                40.88539042821159
+            ],
+            "size": 3232
+        },
+        "57": {
+            "label": "L_Primary_somatosensory_cortex_BA3b",
+            "center": [
+                -49.997175141242934,
+                -15.155367231638422,
+                36.87288135593221
+            ],
+            "size": 4608
+        },
+        "58": {
+            "label": "R_Primary_somatosensory_cortex_BA3b",
+            "center": [
+                39.288980070339974,
+                -22.743845252051585,
+                46.51289566236811
+            ],
+            "size": 6824
+        },
+        "59": {
+            "label": "L_Secondary_somatosensory_cortex_Parietal_operculum_OP1",
+            "center": [
+                -52.242251223491024,
+                -23.446166394779766,
+                17.01386623164764
+            ],
+            "size": 4904
+        },
+        "60": {
+            "label": "R_Secondary_somatosensory_cortex_Parietal_operculum_OP1",
+            "center": [
+                51.43904761904762,
+                -22.43142857142857,
+                18.471428571428575
+            ],
+            "size": 4200
+        },
+        "61": {
+            "label": "L_Secondary_somatosensory_cortex_Parietal_operculum_OP2",
+            "center": [
+                -35.484848484848484,
+                -23.818181818181813,
+                18.818181818181813
+            ],
+            "size": 1056
+        },
+        "62": {
+            "label": "R_Secondary_somatosensory_cortex_Parietal_operculum_OP2",
+            "center": [
+                35.2375,
+                -20.8125,
+                18.25
+            ],
+            "size": 1280
+        },
+        "63": {
+            "label": "L_Secondary_somatosensory_cortex_Parietal_operculum_OP3",
+            "center": [
+                -39.76688102893891,
+                -12.545016077170416,
+                16.90192926045016
+            ],
+            "size": 2488
+        },
+        "64": {
+            "label": "R_Secondary_somatosensory_cortex_Parietal_operculum_OP3",
+            "center": [
+                41.00675675675676,
+                -10.479729729729726,
+                17.80405405405405
+            ],
+            "size": 2400
+        },
+        "65": {
+            "label": "L_Secondary_somatosensory_cortex_Parietal_operculum_OP4",
+            "center": [
+                -56.89865996649917,
+                -8.824958123953095,
+                12.960636515912896
+            ],
+            "size": 4776
+        },
+        "66": {
+            "label": "R_Secondary_somatosensory_cortex_Parietal_operculum_OP4",
+            "center": [
+                59.174418604651166,
+                -7.593023255813961,
+                13.616279069767444
+            ],
+            "size": 4128
+        },
+        "67": {
+            "label": "L_Superior_parietal_lobule_5Ci",
+            "center": [
+                -15.15408805031447,
+                -34.575471698113205,
+                43.22327044025157
+            ],
+            "size": 1288
+        },
+        "68": {
+            "label": "R_Superior_parietal_lobule_5Ci",
+            "center": [
+                11.74242424242425,
+                -34.1103896103896,
+                44.807359307359306
+            ],
+            "size": 1848
+        },
+        "69": {
+            "label": "L_Superior_parietal_lobule_5L",
+            "center": [
+                -15.776422764227647,
+                -46.617886178861795,
+                68.09756097560975
+            ],
+            "size": 3976
+        },
+        "70": {
+            "label": "R_Superior_parietal_lobule_5L",
+            "center": [
+                13.433734939759034,
+                -49.945783132530124,
+                70.03915662650601
+            ],
+            "size": 5336
+        },
+        "71": {
+            "label": "L_Superior_parietal_lobule_5M",
+            "center": [
+                -7.231707317073173,
+                -41.36720867208672,
+                53.1910569105691
+            ],
+            "size": 3008
+        },
+        "72": {
+            "label": "R_Superior_parietal_lobule_5M",
+            "center": [
+                5.494923857868017,
+                -44.317258883248726,
+                57.38324873096445
+            ],
+            "size": 3208
+        },
+        "73": {
+            "label": "L_Superior_parietal_lobule_7A",
+            "center": [
+                -19.118945102260497,
+                -60.927341227125936,
+                59.37190527448871
+            ],
+            "size": 14872
+        },
+        "74": {
+            "label": "R_Superior_parietal_lobule_7A",
+            "center": [
+                19.82293291731669,
+                -61.06630265210609,
+                60.12090483619346
+            ],
+            "size": 10272
+        },
+        "75": {
+            "label": "L_Superior_parietal_lobule_7M",
+            "center": [
+                -2.3064516129032313,
+                -73.4247311827957,
+                35.06989247311827
+            ],
+            "size": 760
+        },
+        "76": {
+            "label": "R_Superior_parietal_lobule_7M",
+            "center": [
+                4.076576576576571,
+                -70.96846846846847,
+                36.80630630630631
+            ],
+            "size": 1776
+        },
+        "77": {
+            "label": "L_Superior_parietal_lobule_7PC",
+            "center": [
+                -34.25141242937853,
+                -49.61864406779661,
+                58.053672316384166
+            ],
+            "size": 1440
+        },
+        "78": {
+            "label": "R_Superior_parietal_lobule_7PC",
+            "center": [
+                30.60027100271003,
+                -48.81978319783198,
+                58.491869918699194
+            ],
+            "size": 2968
+        },
+        "79": {
+            "label": "L_Superior_parietal_lobule_7P",
+            "center": [
+                -9.176100628930811,
+                -75.11006289308176,
+                50.36477987421384
+            ],
+            "size": 5096
+        },
+        "80": {
+            "label": "R_Superior_parietal_lobule_7P",
+            "center": [
+                14.184280052840165,
+                -73.06010568031704,
+                54.815719947159835
+            ],
+            "size": 6072
+        },
+        "81": {
+            "label": "L_Visual_cortex_V1_BA17",
+            "center": [
+                -8.74649298597194,
+                -85.47995991983967,
+                3.7374749498997915
+            ],
+            "size": 15984
+        },
+        "82": {
+            "label": "R_Visual_cortex_V1_BA17",
+            "center": [
+                13.307046979865774,
+                -82.38842281879195,
+                3.285234899328856
+            ],
+            "size": 19080
+        },
+        "83": {
+            "label": "L_Visual_cortex_V2_BA18",
+            "center": [
+                -12.089349112426035,
+                -87.05266272189348,
+                6.6065088757396495
+            ],
+            "size": 13552
+        },
+        "84": {
+            "label": "R_Visual_cortex_V2_BA18",
+            "center": [
+                15.200804289544237,
+                -82.34986595174263,
+                7.326273458445044
+            ],
+            "size": 14992
+        },
+        "85": {
+            "label": "L_Visual_cortex_V3V",
+            "center": [
+                -21.543333333333337,
+                -88.48666666666666,
+                -6.536666666666662
+            ],
+            "size": 4808
+        },
+        "86": {
+            "label": "R_Visual_cortex_V3V",
+            "center": [
+                25.887692307692305,
+                -82.85076923076923,
+                -8.32153846153846
+            ],
+            "size": 5200
+        },
+        "87": {
+            "label": "L_Visual_cortex_V4",
+            "center": [
+                -27.44451612903225,
+                -80.2574193548387,
+                -10.791612903225804
+            ],
+            "size": 6256
+        },
+        "88": {
+            "label": "R_Visual_cortex_V4",
+            "center": [
+                33.5,
+                -76.37037037037037,
+                -10.978395061728392
+            ],
+            "size": 5184
+        },
+        "89": {
+            "label": "L_Visual_cortex_V5",
+            "center": [
+                -42.423076923076934,
+                -74.73076923076923,
+                4.756410256410263
+            ],
+            "size": 1248
+        },
+        "90": {
+            "label": "R_Visual_cortex_V5",
+            "center": [
+                48.704819277108435,
+                -66.48795180722891,
+                3.8855421686747036
+            ],
+            "size": 1328
+        },
+        "91": {
+            "label": "L_Premotor_cortex_BA6",
+            "center": [
+                -20.430171543895057,
+                -6.644904137235116,
+                59.74581231079719
+            ],
+            "size": 39664
+        },
+        "92": {
+            "label": "R_Premotor_cortex_BA6",
+            "center": [
+                20.825116185087893,
+                -6.92796524550414,
+                59.64103859365528
+            ],
+            "size": 39600
+        },
+        "93": {
+            "label": "R_Lateral_geniculate_body",
+            "center": [
+                23.84285714285714,
+                -22.900000000000006,
+                -8.785714285714285
+            ],
+            "size": 280
+        },
+        "94": {
+            "label": "L_Lateral_geniculate_body",
+            "center": [
+                -22.57142857142857,
+                -24.64285714285714,
+                -9.214285714285715
+            ],
+            "size": 224
+        },
+        "95": {
+            "label": "R_Medial_geniculate_body",
+            "center": [
+                16.5,
+                -25.16666666666667,
+                -9.0
+            ],
+            "size": 96
+        },
+        "96": {
+            "label": "L_Medial_geniculate_body",
+            "center": [
+                -16.125,
+                -26.5,
+                -8.75
+            ],
+            "size": 128
+        },
+        "97": {
+            "label": "L_Insula_Id1",
+            "center": [
+                -40.448051948051955,
+                -18.266233766233768,
+                -3.642857142857139
+            ],
+            "size": 616
+        },
+        "98": {
+            "label": "R_Insula_Id1",
+            "center": [
+                41.342696629213485,
+                -17.646067415730343,
+                -5.735955056179776
+            ],
+            "size": 712
+        },
+        "99": {
+            "label": "L_Insula_Ig1",
+            "center": [
+                -32.31818181818181,
+                -29.409090909090907,
+                12.954545454545453
+            ],
+            "size": 176
+        },
+        "100": {
+            "label": "R_Insula_Ig1",
+            "center": [
+                32.98148148148148,
+                -27.240740740740748,
+                9.055555555555557
+            ],
+            "size": 216
+        },
+        "101": {
+            "label": "L_Insula_Ig2",
+            "center": [
+                -36.99484536082474,
+                -21.778350515463913,
+                7.7268041237113465
+            ],
+            "size": 776
+        },
+        "102": {
+            "label": "R_Insula_Ig2",
+            "center": [
+                36.473684210526315,
+                -20.39473684210526,
+                7.5
+            ],
+            "size": 616
+        },
+        "103": {
+            "label": "Mamillary_body",
+            "center": [
+                0.6578947368421098,
+                -8.5,
+                -15.482456140350877
+            ],
+            "size": 456
+        }
+    }
+}

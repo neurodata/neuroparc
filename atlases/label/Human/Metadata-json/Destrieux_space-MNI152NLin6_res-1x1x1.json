@@ -1,3 +1,696 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43a4c9e1efea5bbabe990481e2e3ab502af8ea95484768ce9adec851c5e9d5dd
-size 19195
+{
+    "MetaData": {
+        "AtlasName": "Destrieux",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "no",
+        "Symmetrical": "yes",
+        "Number of Regions": "75",
+        "Average Volume Per Region": "96280.42666666667",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": "https://www.ncbi.nlm.nih.gov/pubmed/20547229"
+    },
+    "rois": {
+        "0": {
+            "label": "null",
+            "center": [
+                -0.5262905166527645,
+                -17.386470966550718,
+                18.73517224030742
+            ],
+            "size": 6458408
+        },
+        "1": {
+            "label": "Fronto-marginal_gyrus+sulcus",
+            "center": [
+                -23.84529147982063,
+                56.199551569506724,
+                -8.656950672645742
+            ],
+            "size": 7048
+        },
+        "2": {
+            "label": "Inferior_occipital_gyrus+sulcus",
+            "center": [
+                41.195205479452056,
+                -78.83219178082192,
+                -11.654109589041099
+            ],
+            "size": 8240
+        },
+        "3": {
+            "label": "Paracentral_lobule+sulcus",
+            "center": [
+                -1.6527599486521183,
+                -33.90051347881899,
+                68.2586649550706
+            ],
+            "size": 12464
+        },
+        "4": {
+            "label": "Subcentral_gyrus+sulci",
+            "center": [
+                -56.77060270602706,
+                -11.82226322263223,
+                15.08425584255842
+            ],
+            "size": 11440
+        },
+        "5": {
+            "label": "Transverse_frontopolar_gyri+sulci",
+            "center": [
+                15.547524752475255,
+                62.69405940594061,
+                1.0128712871287178
+            ],
+            "size": 6984
+        },
+        "6": {
+            "label": "Cingulate_gyrus+sulcus_anterior_part",
+            "center": [
+                8.072307692307689,
+                38.22307692307692,
+                8.07846153846154
+            ],
+            "size": 13552
+        },
+        "7": {
+            "label": "Cingulate_gyrus+sulcus_middle-anterior_part",
+            "center": [
+                0.39196675900277,
+                15.587719298245617,
+                35.7253000923361
+            ],
+            "size": 8664
+        },
+        "8": {
+            "label": "Cingulate_gyrus+sulcus_middle-posterior_part",
+            "center": [
+                -0.23007246376812418,
+                -11.186594202898547,
+                41.97826086956522
+            ],
+            "size": 8832
+        },
+        "9": {
+            "label": "Cingulate_gyrus_posterior-dorsal_part",
+            "center": [
+                -0.4104895104895121,
+                -39.533566433566435,
+                32.12657342657343
+            ],
+            "size": 5720
+        },
+        "10": {
+            "label": "Cingulate_gyrus_posterior-ventral_part",
+            "center": [
+                7.656862745098039,
+                -50.56862745098039,
+                7.147058823529406
+            ],
+            "size": 2792
+        },
+        "11": {
+            "label": "Cuneus",
+            "center": [
+                0.10565723793676796,
+                -80.86272878535775,
+                18.42678868552413
+            ],
+            "size": 9616
+        },
+        "12": {
+            "label": "Inferior_frontal_gyrus_opercular_part",
+            "center": [
+                -50.5961038961039,
+                11.167532467532453,
+                9.819480519480521
+            ],
+            "size": 12024
+        },
+        "13": {
+            "label": "Inferior_frontal_gyrus_orbital_part",
+            "center": [
+                -44.66410256410256,
+                29.987179487179475,
+                -9.720512820512823
+            ],
+            "size": 2488
+        },
+        "14": {
+            "label": "Inferior_frontal_gyrus_triangular_part",
+            "center": [
+                51.69266055045871,
+                28.29816513761469,
+                7.977064220183479
+            ],
+            "size": 6944
+        },
+        "15": {
+            "label": "Middle_frontal_gyrus",
+            "center": [
+                39.164900662251654,
+                29.143708609271528,
+                33.42317880794701
+            ],
+            "size": 28296
+        },
+        "16": {
+            "label": "Superior_frontal_gyrus",
+            "center": [
+                -10.364442679375173,
+                24.98133439237489,
+                46.38747683346571
+            ],
+            "size": 57856
+        },
+        "17": {
+            "label": "Insula_insular_gyrus+central_sulcus",
+            "center": [
+                -38.976489028213166,
+                -8.377742946708466,
+                0.05172413793103203
+            ],
+            "size": 4880
+        },
+        "18": {
+            "label": "Insular_gyri_short",
+            "center": [
+                -37.554704595185996,
+                9.169584245076578,
+                -2.981400437636765
+            ],
+            "size": 6704
+        },
+        "19": {
+            "label": "Middle_occipital_gyrus",
+            "center": [
+                40.43410404624277,
+                -81.78670520231213,
+                14.110404624277464
+            ],
+            "size": 13600
+        },
+        "20": {
+            "label": "Superior_occipital_gyrus",
+            "center": [
+                18.551724137931032,
+                -85.70977011494253,
+                32.44252873563218
+            ],
+            "size": 9744
+        },
+        "21": {
+            "label": "Lateral_occipito-temporal_gyrus",
+            "center": [
+                -35.14544456641053,
+                -54.4549945115258,
+                -19.268386388583977
+            ],
+            "size": 13768
+        },
+        "22": {
+            "label": "Lingual_gyrus",
+            "center": [
+                -11.390959925442687,
+                -72.89235787511649,
+                -5.3089468779123905
+            ],
+            "size": 17088
+        },
+        "23": {
+            "label": "Parahippocampal_gyrus",
+            "center": [
+                24.387365328109695,
+                -16.812438785504412,
+                -25.88295788442703
+            ],
+            "size": 16336
+        },
+        "24": {
+            "label": "Orbital_gyri",
+            "center": [
+                27.977669902912623,
+                34.16731391585762,
+                -17.33236245954693
+            ],
+            "size": 22928
+        },
+        "25": {
+            "label": "Angular_gyrus",
+            "center": [
+                -43.43521126760564,
+                -67.59953051643193,
+                37.08685446009389
+            ],
+            "size": 16280
+        },
+        "26": {
+            "label": "Supramarginal_gyrus",
+            "center": [
+                57.15637371338084,
+                -32.8507521773555,
+                31.73911322248614
+            ],
+            "size": 19848
+        },
+        "27": {
+            "label": "Superior_parietal_lobule",
+            "center": [
+                -21.936643835616437,
+                -61.10616438356165,
+                58.27397260273972
+            ],
+            "size": 16792
+        },
+        "28": {
+            "label": "Postcentral_gyrus",
+            "center": [
+                -45.12390158172232,
+                -25.26625659050967,
+                54.22583479789104
+            ],
+            "size": 17688
+        },
+        "29": {
+            "label": "Precentral_gyrus",
+            "center": [
+                41.6107099879663,
+                -8.396510228640196,
+                51.0439229843562
+            ],
+            "size": 26384
+        },
+        "30": {
+            "label": "Precuneus",
+            "center": [
+                -0.33651710350955,
+                -59.03442914260329,
+                42.313860506441586
+            ],
+            "size": 18008
+        },
+        "31": {
+            "label": "Straight_gyrus",
+            "center": [
+                -5.560921248142648,
+                37.852154531946496,
+                -19.581723625557203
+            ],
+            "size": 9304
+        },
+        "32": {
+            "label": "Subcallosal_area+gyrus",
+            "center": [
+                4.870786516853926,
+                14.028089887640448,
+                -12.724719101123597
+            ],
+            "size": 1368
+        },
+        "33": {
+            "label": "Anterior_transverse_temporal_gyrus",
+            "center": [
+                -48.013513513513516,
+                -19.905405405405403,
+                6.581081081081081
+            ],
+            "size": 4272
+        },
+        "34": {
+            "label": "Superior_temporal_gyrus_lateral_aspect",
+            "center": [
+                -58.71836587129428,
+                -12.194143167028201,
+                -5.400939985538685
+            ],
+            "size": 20464
+        },
+        "35": {
+            "label": "Superior_temporal_gyrus_planum_polare",
+            "center": [
+                -40.973846153846154,
+                3.6200000000000045,
+                -20.087692307692308
+            ],
+            "size": 5040
+        },
+        "36": {
+            "label": "Planum_temporale",
+            "center": [
+                -57.741217798594846,
+                -38.314988290398134,
+                17.026932084309138
+            ],
+            "size": 5792
+        },
+        "37": {
+            "label": "Inferior_temporal_gyrus",
+            "center": [
+                52.77009646302251,
+                -33.36173633440515,
+                -25.776527331189712
+            ],
+            "size": 19904
+        },
+        "38": {
+            "label": "Middle_temporal_gyrus",
+            "center": [
+                60.82610082961072,
+                -28.572112316528404,
+                -12.780791320995533
+            ],
+            "size": 24216
+        },
+        "39": {
+            "label": "Anterior_segment_of_lateral_sulcus_horizontal_ramus",
+            "center": [
+                40.95614035087719,
+                27.86842105263159,
+                2.201754385964918
+            ],
+            "size": 1472
+        },
+        "40": {
+            "label": "Anterior_segment_of_lateral_sulcus_vertical_ramus",
+            "center": [
+                -43.76126126126127,
+                20.95045045045046,
+                7.5900900900900865
+            ],
+            "size": 1416
+        },
+        "41": {
+            "label": "Lateral_sulcus_posterior_ramus",
+            "center": [
+                40.026732673267325,
+                -28.31584158415842,
+                17.915841584158414
+            ],
+            "size": 7160
+        },
+        "42": {
+            "label": "null",
+            "center": null,
+            "size": null
+        },
+        "43": {
+            "label": "Occipital_pole",
+            "center": [
+                17.292784458834404,
+                -96.20490286771508,
+                -2.091119333950047
+            ],
+            "size": 14952
+        },
+        "44": {
+            "label": "Temporal_pole",
+            "center": [
+                37.022222222222226,
+                7.166666666666657,
+                -37.01481481481481
+            ],
+            "size": 16160
+        },
+        "45": {
+            "label": "Calcarine_sulcus",
+            "center": [
+                -16.833825701624818,
+                -67.58567208271788,
+                5.036189069423926
+            ],
+            "size": 10624
+        },
+        "46": {
+            "label": "Central_sulcus",
+            "center": [
+                -36.79158878504673,
+                -20.944859813084108,
+                45.627102803738325
+            ],
+            "size": 17048
+        },
+        "47": {
+            "label": "Cingulate_sulcus_marginal_branch",
+            "center": [
+                12.555319148936164,
+                -36.806382978723406,
+                47.52553191489362
+            ],
+            "size": 6928
+        },
+        "48": {
+            "label": "Insula_circular_sulcus_anterior_part",
+            "center": [
+                31.33177570093458,
+                22.35046728971963,
+                -6.612149532710276
+            ],
+            "size": 3296
+        },
+        "49": {
+            "label": "Insula_circular_sulcus_inferior_part",
+            "center": [
+                -41.411042944785265,
+                -13.046012269938643,
+                -7.079754601226995
+            ],
+            "size": 9512
+        },
+        "50": {
+            "label": "Insula_circular_sulcus_superior_part",
+            "center": [
+                -36.240432612312816,
+                5.737936772046595,
+                10.927620632279542
+            ],
+            "size": 8784
+        },
+        "51": {
+            "label": "Anterior_transverse_collateral_sulcus",
+            "center": [
+                -41.225925925925935,
+                -22.351851851851848,
+                -26.196296296296296
+            ],
+            "size": 4096
+        },
+        "52": {
+            "label": "Posterior_transverse_collateral_sulcus",
+            "center": [
+                25.66216216216216,
+                -78.55405405405406,
+                -8.310810810810807
+            ],
+            "size": 1144
+        },
+        "53": {
+            "label": "Inferior_frontal_sulcus",
+            "center": [
+                -39.85887096774192,
+                22.72983870967741,
+                21.532258064516128
+            ],
+            "size": 7728
+        },
+        "54": {
+            "label": "Middle_frontal_sulcus",
+            "center": [
+                28.379807692307693,
+                41.298076923076934,
+                21.5
+            ],
+            "size": 6120
+        },
+        "55": {
+            "label": "Superior_frontal_sulcus",
+            "center": [
+                -24.432489451476798,
+                18.5928270042194,
+                44.32981715893108
+            ],
+            "size": 10304
+        },
+        "56": {
+            "label": "Sulcus_intermedius_primus",
+            "center": [
+                43.839622641509436,
+                -45.12264150943396,
+                37.87735849056604
+            ],
+            "size": 1208
+        },
+        "57": {
+            "label": "Intraparietal_sulcus+transverse_parietal_sulci",
+            "center": [
+                -29.630769230769232,
+                -60.47435897435898,
+                39.351282051282055
+            ],
+            "size": 11608
+        },
+        "58": {
+            "label": "Middle_occipital+lunatus_sulcus",
+            "center": [
+                -31.286729857819907,
+                -87.24407582938389,
+                3.9075829383886287
+            ],
+            "size": 3344
+        },
+        "59": {
+            "label": "Superior+transverse_occipital_sulcus",
+            "center": [
+                27.72099447513812,
+                -77.48895027624309,
+                22.483425414364646
+            ],
+            "size": 5288
+        },
+        "60": {
+            "label": "Anterior_occipital_sulcus+preoccipital_notch",
+            "center": [
+                -43.760869565217405,
+                -69.29710144927536,
+                1.818840579710141
+            ],
+            "size": 2112
+        },
+        "61": {
+            "label": "Lateral_occipito-temporal_sulcus",
+            "center": [
+                -43.61557788944722,
+                -51.99246231155779,
+                -13.937185929648237
+            ],
+            "size": 2848
+        },
+        "62": {
+            "label": "Collateral+lingual_sulcus",
+            "center": [
+                -29.41417910447761,
+                -50.0,
+                -10.921641791044777
+            ],
+            "size": 8440
+        },
+        "63": {
+            "label": "Lateral_orbital_sulcus",
+            "center": [
+                -41.19767441860466,
+                41.034883720930225,
+                -2.2674418604651123
+            ],
+            "size": 1352
+        },
+        "64": {
+            "label": "Olfactory_sulcus",
+            "center": [
+                13.246031746031747,
+                22.92328042328043,
+                -17.07142857142857
+            ],
+            "size": 2928
+        },
+        "65": {
+            "label": "Orbital_sulci",
+            "center": [
+                25.608108108108112,
+                35.296068796068795,
+                -13.163390663390665
+            ],
+            "size": 5928
+        },
+        "66": {
+            "label": "Parieto-occipital_sulcus",
+            "center": [
+                16.663763066202094,
+                -67.63588850174216,
+                25.168989547038336
+            ],
+            "size": 8848
+        },
+        "67": {
+            "label": "Pericallosal_sulcus",
+            "center": [
+                5.719679633867273,
+                -4.140732265446218,
+                21.078947368421055
+            ],
+            "size": 6912
+        },
+        "68": {
+            "label": "Postcentral_sulcus",
+            "center": [
+                -37.950608930987826,
+                -36.117050067658994,
+                46.038565629228685
+            ],
+            "size": 10976
+        },
+        "69": {
+            "label": "Precentral_sulcus_inferior_part",
+            "center": [
+                42.71184510250569,
+                5.283599088838258,
+                28.83940774487472
+            ],
+            "size": 6984
+        },
+        "70": {
+            "label": "Precentral_sulcus_superior_part",
+            "center": [
+                27.004854368932037,
+                -8.432038834951456,
+                53.79611650485437
+            ],
+            "size": 6528
+        },
+        "71": {
+            "label": "Suborbital_sulcus",
+            "center": [
+                -7.757142857142853,
+                39.38163265306122,
+                -9.765306122448976
+            ],
+            "size": 2912
+        },
+        "72": {
+            "label": "Subparietal_sulcus",
+            "center": [
+                -10.872549019607845,
+                -49.035947712418306,
+                35.689542483660134
+            ],
+            "size": 4824
+        },
+        "73": {
+            "label": "Inferior_temporal_sulcus",
+            "center": [
+                -53.84722222222223,
+                -25.430555555555557,
+                -22.27777777777778
+            ],
+            "size": 3424
+        },
+        "74": {
+            "label": "Superior_temporal_sulcus",
+            "center": [
+                49.58518086347725,
+                -38.7485414235706,
+                3.8360560093348965
+            ],
+            "size": 24432
+        },
+        "75": {
+            "label": "Transverse_temporal_sulcus",
+            "center": [
+                -51.01851851851853,
+                -26.0,
+                3.555555555555557
+            ],
+            "size": 1616
+        }
+    }
+}

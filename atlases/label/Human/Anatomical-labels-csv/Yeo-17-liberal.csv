@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb1c6c4e770ed772a7935ce87bbefef88564745f4120e00b6397076e7dccd511
-size 331
+0,empty
+1,1_Visual_A
+2,2_Visual_B
+3,3_Somatomotor_A
+4,4_Somatomotor_B
+5,5_Temporal_Parietal
+6,6_Frontoparietal_Area
+7,7_Dorsal_Attention_B
+8,8_Salience+Ventral_Attention_A
+9,9_Salience+Ventral_Attention_B
+10,10_Control_A
+11,11_Control_B
+12,12_Control_C
+13,13_Default_A
+14,14_Default_B
+15,15_Default_C
+16,16_Limbic_A
+17,17_Limbic_B

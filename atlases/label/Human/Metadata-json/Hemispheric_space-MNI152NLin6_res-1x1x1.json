@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d02f856e6f471508292fc07bd765bbb065fe3852d8982643ed8f2844fbd81172
-size 1090
+{
+    "MetaData": {
+        "AtlasName": "Hemispheric",
+        "Description": "",
+        "Native Coordinate Space": "",
+        "Hierarchical": "no",
+        "Symmetrical": "no",
+        "Number of Regions": "3",
+        "Average Volume Per Region": "2407010.6666666665",
+        "Year Generated": "2020",
+        "Generation Method": "",
+        "Source": ""
+    },
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": [
+                -0.8611341198386242,
+                -16.120357079764304,
+                21.461971759297356
+            ],
+            "size": 5393937
+        },
+        "1": {
+            "label": "R_hemisphere",
+            "center": [
+                27.59354449478471,
+                -20.83046506516999,
+                9.936237384409921
+            ],
+            "size": 946454
+        },
+        "2": {
+            "label": "L_hemisphere",
+            "center": [
+                -28.48554502396577,
+                -22.285471440364915,
+                9.73476291431939
+            ],
+            "size": 880641
+        }
+    }
+}

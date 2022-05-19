@@ -1,0 +1,15 @@
+% test script to ensure that all files are BIDS friendly enough to be parsed by BIDS-matlab
+
+this_dir = fileparts(mfilename('fullpath'));
+
+label_folder = fullfile(this_dir, '..', 'atlases', 'label', 'Human');
+
+files = bids.internal.file_utils('FPList', label_folder, '^*.nii.gz');
+
+for i = 1:size(files, 1)
+  
+  bids.internal.file_utils(files(i, 1), )
+  bids.File(deblank(files(i, 1)), 'tolerant', false)
+  
+  
+end

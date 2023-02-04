@@ -7,7 +7,7 @@ import os
 from math import floor
 
 
-def dice_roi(input_dir, output_dir, atlas1, atlas2):
+def dice_roi(input_dir, output_dir, atlas1, atlas2, verbose=True):
     """Calculates the dice coefficient for every ROI combination from atlas1 and atlas2
 
     Parameters
@@ -48,7 +48,8 @@ def dice_roi(input_dir, output_dir, atlas1, atlas2):
             
             Dice[int(i)][int(j)]=float(dice)
 
-            print(f'Dice coefficient for {yname} {i} of {max_y}, {xname} {j} of {max_x} = {dice}')
+            if verbose:
+                print(f'Dice coefficient for {yname} {i} of {max_y}, {xname} {j} of {max_x} = {dice}')
 
             if dice > 1 or dice < 0:
                 raise ValueError(f"Dice coefficient is greater than 1 or less than 0 ({dice}) at atlas1: {val1}, atlas2: {val2}")

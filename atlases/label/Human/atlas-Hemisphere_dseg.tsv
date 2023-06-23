@@ -1,4 +1,4 @@
-index	label
-0	empty
-1	R_hemisphere
-2	L_hemisphere
+index	label	hemisphere
+0	empty	bilateral
+1	R_hemisphere	right
+2	L_hemisphere	left

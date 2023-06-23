@@ -1,105 +1,105 @@
-index	label
-0	empty
-1	L_Anterior_intra-parietal_sulcus_hIP1
-2	R_Anterior_intra-parietal_sulcus_hIP1
-3	L_Anterior_intra-parietal_sulcus_hIP2
-4	R_Anterior_intra-parietal_sulcus_hIP2
-5	L_Anterior_intra-parietal_sulcus_hIP3
-6	R_Anterior_intra-parietal_sulcus_hIP3
-7	L_Amygdala_centromedial_group
-8	R_Amygdala_centromedial_group
-9	L_Amygdala_laterobasal_group
-10	R_Amygdala_laterobasal_group
-11	L_Amygdala_superficial_group
-12	R_Amygdala_superficial_group
-13	L_Broca's_area_BA44
-14	R_Broca's_area_BA44
-15	L_Broca's_area_BA45
-16	R_Broca's_area_BA45
-17	L_Hippocampus_cornu_ammonis
-18	R_Hippocampus_cornu_ammonis
-19	L_Hippocampus_entorhinal_cortex
-20	R_Hippocampus_entorhinal_cortex
-21	L_Hippocampus_dentate_gyrus
-22	R_Hippocampus_dentate_gyrus
-23	L_Hippocampus_hippocampal-amygdaloid_transition_area
-24	R_Hippocampus_hippocampal-amygdaloid_transition_area
-25	L_Hippocampus_subiculum
-26	R_Hippocampus_subiculum
-27	L_Inferior_parietal_lobule_PF
-28	R_Inferior_parietal_lobule_PF
-29	L_Inferior_parietal_lobule_PFcm
-30	R_Inferior_parietal_lobule_PFcm
-31	L_Inferior_parietal_lobule_PFm
-32	R_Inferior_parietal_lobule_PFm
-33	L_Inferior_parietal_lobule_PFop
-34	R_Inferior_parietal_lobule_PFop
-35	L_Inferior_parietal_lobule_PFt
-36	R_Inferior_parietal_lobule_PFt
-37	L_Inferior_parietal_lobule_Pga
-38	R_Inferior_parietal_lobule_Pga
-39	L_Inferior_parietal_lobule_PGp
-40	R_Inferior_parietal_lobule_PGp
-41	L_Primary_auditory_cortex_TE1.0
-42	R_Primary_auditory_cortex_TE1.0
-43	L_Primary_auditory_cortex_TE1.1
-44	R_Primary_auditory_cortex_TE1.1
-45	L_Primary_auditory_cortex_TE1.2
-46	R_Primary_auditory_cortex_TE1.2
-47	L_Primary_motor_cortex_BA4a
-48	R_Primary_motor_cortex_BA4a
-49	L_Primary_motor_cortex_BA4p
-50	R_Primary_motor_cortex_BA4p
-51	L_Primary_somatosensory_cortex_BA1
-52	R_Primary_somatosensory_cortex_BA1
-53	L_Primary_somatosensory_cortex_BA2
-54	R_Primary_somatosensory_cortex_BA2
-55	L_Primary_somatosensory_cortex_BA3a
-56	R_Primary_somatosensory_cortex_BA3a
-57	L_Primary_somatosensory_cortex_BA3b
-58	R_Primary_somatosensory_cortex_BA3b
-59	L_Secondary_somatosensory_cortex_Parietal_operculum_OP1
-60	R_Secondary_somatosensory_cortex_Parietal_operculum_OP1
-61	L_Secondary_somatosensory_cortex_Parietal_operculum_OP2
-62	R_Secondary_somatosensory_cortex_Parietal_operculum_OP2
-63	L_Secondary_somatosensory_cortex_Parietal_operculum_OP3
-64	R_Secondary_somatosensory_cortex_Parietal_operculum_OP3
-65	L_Secondary_somatosensory_cortex_Parietal_operculum_OP4
-66	R_Secondary_somatosensory_cortex_Parietal_operculum_OP4
-67	L_Superior_parietal_lobule_5Ci
-68	R_Superior_parietal_lobule_5Ci
-69	L_Superior_parietal_lobule_5L
-70	R_Superior_parietal_lobule_5L
-71	L_Superior_parietal_lobule_5M
-72	R_Superior_parietal_lobule_5M
-73	L_Superior_parietal_lobule_7A
-74	R_Superior_parietal_lobule_7A
-75	L_Superior_parietal_lobule_7M
-76	R_Superior_parietal_lobule_7M
-77	L_Superior_parietal_lobule_7PC
-78	R_Superior_parietal_lobule_7PC
-79	L_Superior_parietal_lobule_7P
-80	R_Superior_parietal_lobule_7P
-81	L_Visual_cortex_V1_BA17
-82	R_Visual_cortex_V1_BA17
-83	L_Visual_cortex_V2_BA18
-84	R_Visual_cortex_V2_BA18
-85	L_Visual_cortex_V3V
-86	R_Visual_cortex_V3V
-87	L_Visual_cortex_V4
-88	R_Visual_cortex_V4
-89	L_Visual_cortex_V5
-90	R_Visual_cortex_V5
-91	L_Premotor_cortex_BA6
-92	R_Premotor_cortex_BA6
-93	R_Lateral_geniculate_body
-94	L_Lateral_geniculate_body
-95	R_Medial_geniculate_body
-96	L_Medial_geniculate_body
-97	L_Insula_Id1
-98	R_Insula_Id1
-99	L_Insula_Ig1
-100	R_Insula_Ig1
-101	L_Insula_Ig2
-102	R_Insula_Ig2
-103	Mamillary_body
+index	label	hemisphere
+0	empty	bilateral
+1	L_Anterior_intra-parietal_sulcus_hIP1	left
+2	R_Anterior_intra-parietal_sulcus_hIP1	right
+3	L_Anterior_intra-parietal_sulcus_hIP2	left
+4	R_Anterior_intra-parietal_sulcus_hIP2	right
+5	L_Anterior_intra-parietal_sulcus_hIP3	left
+6	R_Anterior_intra-parietal_sulcus_hIP3	right
+7	L_Amygdala_centromedial_group	left
+8	R_Amygdala_centromedial_group	right
+9	L_Amygdala_laterobasal_group	left
+10	R_Amygdala_laterobasal_group	right
+11	L_Amygdala_superficial_group	left
+12	R_Amygdala_superficial_group	right
+13	L_Broca's_area_BA44	left
+14	R_Broca's_area_BA44	right
+15	L_Broca's_area_BA45	left
+16	R_Broca's_area_BA45	right
+17	L_Hippocampus_cornu_ammonis	left
+18	R_Hippocampus_cornu_ammonis	right
+19	L_Hippocampus_entorhinal_cortex	left
+20	R_Hippocampus_entorhinal_cortex	right
+21	L_Hippocampus_dentate_gyrus	left
+22	R_Hippocampus_dentate_gyrus	right
+23	L_Hippocampus_hippocampal-amygdaloid_transition_area	left
+24	R_Hippocampus_hippocampal-amygdaloid_transition_area	right
+25	L_Hippocampus_subiculum	left
+26	R_Hippocampus_subiculum	right
+27	L_Inferior_parietal_lobule_PF	left
+28	R_Inferior_parietal_lobule_PF	right
+29	L_Inferior_parietal_lobule_PFcm	left
+30	R_Inferior_parietal_lobule_PFcm	right
+31	L_Inferior_parietal_lobule_PFm	left
+32	R_Inferior_parietal_lobule_PFm	right
+33	L_Inferior_parietal_lobule_PFop	left
+34	R_Inferior_parietal_lobule_PFop	right
+35	L_Inferior_parietal_lobule_PFt	left
+36	R_Inferior_parietal_lobule_PFt	right
+37	L_Inferior_parietal_lobule_Pga	left
+38	R_Inferior_parietal_lobule_Pga	right
+39	L_Inferior_parietal_lobule_PGp	left
+40	R_Inferior_parietal_lobule_PGp	right
+41	L_Primary_auditory_cortex_TE1.0	left
+42	R_Primary_auditory_cortex_TE1.0	right
+43	L_Primary_auditory_cortex_TE1.1	left
+44	R_Primary_auditory_cortex_TE1.1	right
+45	L_Primary_auditory_cortex_TE1.2	left
+46	R_Primary_auditory_cortex_TE1.2	right
+47	L_Primary_motor_cortex_BA4a	left
+48	R_Primary_motor_cortex_BA4a	right
+49	L_Primary_motor_cortex_BA4p	left
+50	R_Primary_motor_cortex_BA4p	right
+51	L_Primary_somatosensory_cortex_BA1	left
+52	R_Primary_somatosensory_cortex_BA1	right
+53	L_Primary_somatosensory_cortex_BA2	left
+54	R_Primary_somatosensory_cortex_BA2	right
+55	L_Primary_somatosensory_cortex_BA3a	left
+56	R_Primary_somatosensory_cortex_BA3a	right
+57	L_Primary_somatosensory_cortex_BA3b	left
+58	R_Primary_somatosensory_cortex_BA3b	right
+59	L_Secondary_somatosensory_cortex_Parietal_operculum_OP1	left
+60	R_Secondary_somatosensory_cortex_Parietal_operculum_OP1	right
+61	L_Secondary_somatosensory_cortex_Parietal_operculum_OP2	left
+62	R_Secondary_somatosensory_cortex_Parietal_operculum_OP2	right
+63	L_Secondary_somatosensory_cortex_Parietal_operculum_OP3	left
+64	R_Secondary_somatosensory_cortex_Parietal_operculum_OP3	right
+65	L_Secondary_somatosensory_cortex_Parietal_operculum_OP4	left
+66	R_Secondary_somatosensory_cortex_Parietal_operculum_OP4	right
+67	L_Superior_parietal_lobule_5Ci	left
+68	R_Superior_parietal_lobule_5Ci	right
+69	L_Superior_parietal_lobule_5L	left
+70	R_Superior_parietal_lobule_5L	right
+71	L_Superior_parietal_lobule_5M	left
+72	R_Superior_parietal_lobule_5M	right
+73	L_Superior_parietal_lobule_7A	left
+74	R_Superior_parietal_lobule_7A	right
+75	L_Superior_parietal_lobule_7M	left
+76	R_Superior_parietal_lobule_7M	right
+77	L_Superior_parietal_lobule_7PC	left
+78	R_Superior_parietal_lobule_7PC	right
+79	L_Superior_parietal_lobule_7P	left
+80	R_Superior_parietal_lobule_7P	right
+81	L_Visual_cortex_V1_BA17	left
+82	R_Visual_cortex_V1_BA17	right
+83	L_Visual_cortex_V2_BA18	left
+84	R_Visual_cortex_V2_BA18	right
+85	L_Visual_cortex_V3V	left
+86	R_Visual_cortex_V3V	right
+87	L_Visual_cortex_V4	left
+88	R_Visual_cortex_V4	right
+89	L_Visual_cortex_V5	left
+90	R_Visual_cortex_V5	right
+91	L_Premotor_cortex_BA6	left
+92	R_Premotor_cortex_BA6	right
+93	R_Lateral_geniculate_body	right
+94	L_Lateral_geniculate_body	left
+95	R_Medial_geniculate_body	right
+96	L_Medial_geniculate_body	left
+97	L_Insula_Id1	left
+98	R_Insula_Id1	right
+99	L_Insula_Ig1	left
+100	R_Insula_Ig1	right
+101	L_Insula_Ig2	left
+102	R_Insula_Ig2	right
+103	Mamillary_body	bilateral

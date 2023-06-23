@@ -1,43 +1,43 @@
-index	label
-0	empty
-1	Brodmann_area_1
-2	Brodmann_area_2
-3	Brodmann_area_3
-4	Brodmann_area_4
-5	Brodmann_area_5
-6	Brodmann_area_6
-7	Brodmann_area_7
-8	Brodmann_area_8
-9	Brodmann_area_9
-10	Brodmann_area_10
-11	Brodmann_area_11_12
-12	Brodmann_area_17
-13	Brodmann_area_18
-14	Brodmann_area_19
-15	Brodmann_area_20
-16	Brodmann_area_21
-17	Brodmann_area_22
-18	Brodmann_area_23_31
-19	Brodmann_area_24
-20	Brodmann_area_25
-21	Brodmann_area_26
-22	Brodmann_area_27
-23	Brodmann_area_28
-24	Brodmann_area_29
-25	Brodmann_area_30
-26	Brodmann_area_32_33
-27	Brodmann_area_34
-28	Brodmann_area_35
-29	Brodmann_area_36
-30	Brodmann_area_37
-31	Brodmann_area_38
-32	Brodmann_area_39
-33	Brodmann_area_40
-34	Brodmann_area_41
-35	Brodmann_area_42
-36	Brodmann_area_43
-37	Brodmann_area_44
-38	Brodmann_area_45
-39	Brodmann_area_46
-40	Brodmann_area_47
-41	Brodmann_area_16
+index	label	hemisphere
+0	empty	bilateral
+1	Brodmann_area_1	bilateral
+2	Brodmann_area_2	bilateral
+3	Brodmann_area_3	bilateral
+4	Brodmann_area_4	bilateral
+5	Brodmann_area_5	bilateral
+6	Brodmann_area_6	bilateral
+7	Brodmann_area_7	bilateral
+8	Brodmann_area_8	bilateral
+9	Brodmann_area_9	bilateral
+10	Brodmann_area_10	bilateral
+11	Brodmann_area_11_12	bilateral
+12	Brodmann_area_17	bilateral
+13	Brodmann_area_18	bilateral
+14	Brodmann_area_19	bilateral
+15	Brodmann_area_20	bilateral
+16	Brodmann_area_21	bilateral
+17	Brodmann_area_22	bilateral
+18	Brodmann_area_23_31	bilateral
+19	Brodmann_area_24	bilateral
+20	Brodmann_area_25	bilateral
+21	Brodmann_area_26	bilateral
+22	Brodmann_area_27	bilateral
+23	Brodmann_area_28	bilateral
+24	Brodmann_area_29	bilateral
+25	Brodmann_area_30	bilateral
+26	Brodmann_area_32_33	bilateral
+27	Brodmann_area_34	bilateral
+28	Brodmann_area_35	bilateral
+29	Brodmann_area_36	bilateral
+30	Brodmann_area_37	bilateral
+31	Brodmann_area_38	bilateral
+32	Brodmann_area_39	bilateral
+33	Brodmann_area_40	bilateral
+34	Brodmann_area_41	bilateral
+35	Brodmann_area_42	bilateral
+36	Brodmann_area_43	bilateral
+37	Brodmann_area_44	bilateral
+38	Brodmann_area_45	bilateral
+39	Brodmann_area_46	bilateral
+40	Brodmann_area_47	bilateral
+41	Brodmann_area_16	bilateral

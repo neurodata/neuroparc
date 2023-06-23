@@ -1,22 +1,22 @@
-index	label
-1	Right_Cerebral_White_Matter
-2	Right_Cerebral_Cortex
-3	Right_Lateral_Ventricle
-4	Right_Thalamus
-5	Right_Caudate
-6	Right_Putamen
-7	Right_Pallidum
-8	Brain-Stem
-9	Right_Hippocampus
-10	Right_Amygdala
-11	Right_Accumbens
-12	Left_Cerebral_White_Matter
-13	Left_Cerebral_Cortex
-14	Left_Lateral_Ventricle
-15	Left_Thalamus
-16	Left_Caudate
-17	Left_Putamen
-18	Left_Pallidum
-19	Left_Hippocampus
-20	Left_Amygdala
-21	Left_Accumbens
+index	label	hemisphere
+1	Right_Cerebral_White_Matter	right
+2	Right_Cerebral_Cortex	right
+3	Right_Lateral_Ventricle	right
+4	Right_Thalamus	right
+5	Right_Caudate	right
+6	Right_Putamen	right
+7	Right_Pallidum	right
+8	Brain-Stem	bilateral
+9	Right_Hippocampus	right
+10	Right_Amygdala	right
+11	Right_Accumbens	right
+12	Left_Cerebral_White_Matter	left
+13	Left_Cerebral_Cortex	left
+14	Left_Lateral_Ventricle	left
+15	Left_Thalamus	left
+16	Left_Caudate	left
+17	Left_Putamen	left
+18	Left_Pallidum	left
+19	Left_Hippocampus	left
+20	Left_Amygdala	left
+21	Left_Accumbens	left

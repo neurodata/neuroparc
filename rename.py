@@ -2,7 +2,7 @@ from pathlib import Path
 from rich import print
 import pandas as pd
 
-RENAME = False
+RENAME = True
 
 root_dir = Path(__file__).parent
 

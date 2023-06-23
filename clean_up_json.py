@@ -39,4 +39,10 @@ for file in json_files:
     content["Species"] = "Homo sapiens"
     content["Resolution"] = f"[{resolution}, {resolution}, {resolution}] mm"
 
-    print(content)
+    content.pop("MetaData")
+
+    # print(content)
+
+    if RENAME:
+        with open(file, 'w') as f:
+            json.dump(content, f)

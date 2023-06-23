@@ -3,7 +3,7 @@ from rich import print
 import pandas as pd
 import json
 
-RENAME = False
+RENAME = True
 
 root_dir = Path(__file__).parent
 

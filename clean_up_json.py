@@ -29,9 +29,9 @@ for file in json_files:
             new_key = "".join([x.capitalize() for x in key.split(" ")])
 
         if new_key == "ReferencesAndLinks":
-            content[new_key] = [content["MetaData"][key], ""]
-
-        content[new_key] = content["MetaData"][key]
+            content[new_key] = [content["MetaData"][key]]
+        else:
+            content[new_key] = content["MetaData"][key]
     
     content["Space"] = "MNI152NLin6"
     content["BIDSVersion"] = "1.8.0"

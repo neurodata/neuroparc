@@ -1,0 +1,460 @@
+{
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": null
+        },
+        "1": {
+            "label": "Middle_Cerebellar_Peduncle",
+            "center": [
+                0.5577689243027919,
+                -39.87250996015936,
+                -35.33864541832669
+            ],
+            "size": 252
+        },
+        "2": {
+            "label": "Pontine_Crossing_Tract",
+            "center": [
+                0.3199999999999932,
+                -29.92,
+                -31.92
+            ],
+            "size": 25
+        },
+        "3": {
+            "label": "Corpus_Callosum_Genu",
+            "center": [
+                -0.37410071942446166,
+                25.64028776978418,
+                7.5539568345323715
+            ],
+            "size": 139
+        },
+        "4": {
+            "label": "Body_of_corpus_callosum",
+            "center": [
+                0.6567164179104452,
+                -5.552238805970148,
+                27.611940298507463
+            ],
+            "size": 201
+        },
+        "5": {
+            "label": "Corpus_Callosum_Splenium",
+            "center": [
+                1.238578680203048,
+                -42.050761421319805,
+                18.44670050761421
+            ],
+            "size": 197
+        },
+        "6": {
+            "label": "Fornix_Column+Body",
+            "center": [
+                0.0,
+                -5.200000000000003,
+                12.400000000000006
+            ],
+            "size": 10
+        },
+        "7": {
+            "label": "R_Corticospinal_Tract",
+            "center": [
+                7.07692307692308,
+                -24.615384615384613,
+                -32.30769230769231
+            ],
+            "size": 27
+        },
+        "8": {
+            "label": "L_Corticospinal_Tract",
+            "center": [
+                -6.0,
+                -24.66666666666667,
+                -32.5
+            ],
+            "size": 25
+        },
+        "9": {
+            "label": "R_Medial_Lemniscus",
+            "center": [
+                5.666666666666671,
+                -37.0,
+                -33.666666666666664
+            ],
+            "size": 12
+        },
+        "10": {
+            "label": "L_Medial_Lemniscus",
+            "center": [
+                -5.0,
+                -37.0,
+                -33.0
+            ],
+            "size": 12
+        },
+        "11": {
+            "label": "R_Inferior_Cerebellar_Peduncle",
+            "center": [
+                7.0,
+                -42.5,
+                -49.0
+            ],
+            "size": 16
+        },
+        "12": {
+            "label": "L_Inferior_Cerebellar_Peduncle",
+            "center": [
+                -8.0,
+                -43.07692307692308,
+                -42.92307692307692
+            ],
+            "size": 17
+        },
+        "13": {
+            "label": "R_Superior_Cerebellar_Peduncle",
+            "center": [
+                6.666666666666671,
+                -44.33333333333333,
+                -26.333333333333336
+            ],
+            "size": 15
+        },
+        "14": {
+            "label": "L_Superior_Cerebellar_Peduncle",
+            "center": [
+                -5.17647058823529,
+                -41.647058823529406,
+                -24.82352941176471
+            ],
+            "size": 17
+        },
+        "15": {
+            "label": "R_Cerebral_Peduncle",
+            "center": [
+                13.764705882352942,
+                -18.235294117647058,
+                -11.647058823529413
+            ],
+            "size": 34
+        },
+        "16": {
+            "label": "L_Cerebral_Peduncle",
+            "center": [
+                -13.212121212121218,
+                -17.575757575757578,
+                -11.575757575757578
+            ],
+            "size": 33
+        },
+        "17": {
+            "label": "R_Internal_Capsule_Anterior_Limb",
+            "center": [
+                18.25454545454545,
+                7.054545454545462,
+                8.909090909090907
+            ],
+            "size": 55
+        },
+        "18": {
+            "label": "L_Internal_Capsule_Anterior_Limb",
+            "center": [
+                -17.519999999999996,
+                7.439999999999998,
+                9.039999999999992
+            ],
+            "size": 50
+        },
+        "19": {
+            "label": "R_Internal_Capsule_Posterior_Limb",
+            "center": [
+                21.1875,
+                -13.375,
+                8.8125
+            ],
+            "size": 64
+        },
+        "20": {
+            "label": "L_Internal_Capsule_Posterior_Limb",
+            "center": [
+                -19.50877192982456,
+                -12.84210526315789,
+                8.526315789473685
+            ],
+            "size": 57
+        },
+        "21": {
+            "label": "R_Internal_Capsule_Retrolenticular_Part",
+            "center": [
+                31.348837209302324,
+                -28.74418604651163,
+                6.186046511627907
+            ],
+            "size": 43
+        },
+        "22": {
+            "label": "L_Internal_Capsule_Retrolenticular_Part",
+            "center": [
+                -29.714285714285708,
+                -29.04761904761905,
+                5.714285714285708
+            ],
+            "size": 42
+        },
+        "23": {
+            "label": "R_Anterior_Corona_Radiata",
+            "center": [
+                21.127272727272725,
+                27.96363636363637,
+                10.581818181818178
+            ],
+            "size": 110
+        },
+        "24": {
+            "label": "L_Anterior_Corona_Radiata",
+            "center": [
+                -20.259259259259267,
+                27.62962962962962,
+                10.666666666666671
+            ],
+            "size": 108
+        },
+        "25": {
+            "label": "R_Superior_Corona_Radiata",
+            "center": [
+                24.336448598130843,
+                -7.214953271028037,
+                30.485981308411212
+            ],
+            "size": 107
+        },
+        "26": {
+            "label": "L_Superior_Corona_Radiata",
+            "center": [
+                -22.26086956521739,
+                -8.0695652173913,
+                31.530434782608694
+            ],
+            "size": 115
+        },
+        "27": {
+            "label": "R_Posterior_Corona_Radiata",
+            "center": [
+                25.185185185185183,
+                -37.77777777777777,
+                28.148148148148152
+            ],
+            "size": 54
+        },
+        "28": {
+            "label": "L_Posterior_Corona_Radiata",
+            "center": [
+                -24.14285714285714,
+                -38.0,
+                28.285714285714292
+            ],
+            "size": 56
+        },
+        "29": {
+            "label": "R_Posterior_Thalamic+Optic_Radiation",
+            "center": [
+                34.0,
+                -53.94285714285715,
+                7.5428571428571445
+            ],
+            "size": 70
+        },
+        "30": {
+            "label": "L_Posterior_Thalamic+Optic_Radiation",
+            "center": [
+                -32.45070422535211,
+                -54.4225352112676,
+                7.352112676056336
+            ],
+            "size": 71
+        },
+        "31": {
+            "label": "R_Sagittal_Stratum",
+            "center": [
+                40.121212121212125,
+                -32.0,
+                -10.0
+            ],
+            "size": 35
+        },
+        "32": {
+            "label": "L_Sagittal_Stratum",
+            "center": [
+                -39.25,
+                -30.875,
+                -9.25
+            ],
+            "size": 33
+        },
+        "33": {
+            "label": "R_External_Capsule",
+            "center": [
+                30.745098039215684,
+                0.19607843137254122,
+                1.647058823529406
+            ],
+            "size": 102
+        },
+        "34": {
+            "label": "L_External_Capsule",
+            "center": [
+                -29.25581395348837,
+                0.418604651162795,
+                1.7209302325581461
+            ],
+            "size": 88
+        },
+        "35": {
+            "label": "R_Cingulum_(Cingulate_Gyrus)",
+            "center": [
+                8.0,
+                -10.370370370370367,
+                33.407407407407405
+            ],
+            "size": 37
+        },
+        "36": {
+            "label": "L_Cingulum_(Cingulate_Gyrus)",
+            "center": [
+                -7.030303030303031,
+                -12.24242424242425,
+                34.121212121212125
+            ],
+            "size": 42
+        },
+        "37": {
+            "label": "R_Cingulum_(Hippocampus)",
+            "center": [
+                23.733333333333334,
+                -26.400000000000006,
+                -17.733333333333334
+            ],
+            "size": 19
+        },
+        "38": {
+            "label": "L_Cingulum_(Hippocampus)",
+            "center": [
+                -20.66666666666667,
+                -30.66666666666667,
+                -14.0
+            ],
+            "size": 15
+        },
+        "39": {
+            "label": "R_Fornix_(Cres)+Stria_Terminalis",
+            "center": [
+                27.63636363636364,
+                -28.727272727272734,
+                -2.7272727272727337
+            ],
+            "size": 16
+        },
+        "40": {
+            "label": "L_Fornix_(Cres)+Stria_Terminalis",
+            "center": [
+                -28.25,
+                -24.0,
+                -6.25
+            ],
+            "size": 17
+        },
+        "41": {
+            "label": "R_Superior_Longitudinal_Fasciculus",
+            "center": [
+                35.73033707865169,
+                -21.48314606741573,
+                28.471910112359552
+            ],
+            "size": 107
+        },
+        "42": {
+            "label": "L_Superior_Longitudinal_Fasciculus",
+            "center": [
+                -34.46511627906976,
+                -19.90697674418604,
+                28.883720930232556
+            ],
+            "size": 108
+        },
+        "43": {
+            "label": "R_Superior_Fronto-occipital_Fasciculus",
+            "center": [
+                20.0,
+                0.0,
+                22.0
+            ],
+            "size": 5
+        },
+        "44": {
+            "label": "L_Superior_Fronto-occipital_Fasciculus",
+            "center": [
+                -20.0,
+                2.0,
+                22.0
+            ],
+            "size": 6
+        },
+        "45": {
+            "label": "R_Uncinate_Fasciculus",
+            "center": [
+                33.6,
+                0.7999999999999972,
+                -15.600000000000001
+            ],
+            "size": 5
+        },
+        "46": {
+            "label": "L_Uncinate_Fasciculus",
+            "center": [
+                -33.599999999999994,
+                -1.5999999999999943,
+                -16.4
+            ],
+            "size": 5
+        },
+        "47": {
+            "label": "R_Tapetum",
+            "center": [
+                29.714285714285715,
+                -45.71428571428571,
+                14.57142857142857
+            ],
+            "size": 9
+        },
+        "48": {
+            "label": "L_Tapetum",
+            "center": [
+                -28.0,
+                -48.0,
+                12.0
+            ],
+            "size": 9
+        }
+    },
+    "Atlasname": "JHU",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "48",
+    "AverageVolumePerRegion": "56.083333333333336",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/14645885"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
+}

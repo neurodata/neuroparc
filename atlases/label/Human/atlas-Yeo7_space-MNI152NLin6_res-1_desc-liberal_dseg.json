@@ -1,0 +1,96 @@
+{
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": [
+                -0.7006478278137394,
+                -17.275572754418818,
+                18.57245780653841
+            ],
+            "size": 6166299
+        },
+        "1": {
+            "label": "1_Visual_Area",
+            "center": [
+                2.5343408446903197,
+                -75.47710048126659,
+                3.8861208563846503
+            ],
+            "size": 178225
+        },
+        "2": {
+            "label": "2_Somatomotor_Area",
+            "center": [
+                0.47275095107039533,
+                -19.887481796544705,
+                39.56089737421172
+            ],
+            "size": 155895
+        },
+        "3": {
+            "label": "3_Dorsal_Area",
+            "center": [
+                2.0098291646231843,
+                -55.30227235572994,
+                34.7379230014713
+            ],
+            "size": 122714
+        },
+        "4": {
+            "label": "4_Ventral_Area",
+            "center": [
+                1.0635659362895353,
+                -4.186303983349717,
+                48.05885413655547
+            ],
+            "size": 109290
+        },
+        "5": {
+            "label": "5_Lymbic_Area",
+            "center": [
+                0.5848739677929728,
+                12.382843147879242,
+                -27.557207568434514
+            ],
+            "size": 92292
+        },
+        "6": {
+            "label": "6_Frontoparietal_Area",
+            "center": [
+                38.091824124652994,
+                33.804047640368935,
+                23.391242052476045
+            ],
+            "size": 155339
+        },
+        "7": {
+            "label": "7_Default_Network_Area",
+            "center": [
+                -9.889644261628177,
+                41.19637481354246,
+                21.690222845002936
+            ],
+            "size": 240978
+        }
+    },
+    "Atlasname": "Yeo-7 liberal",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "8",
+    "AverageVolumePerRegion": "902629.0",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174820/"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
+}

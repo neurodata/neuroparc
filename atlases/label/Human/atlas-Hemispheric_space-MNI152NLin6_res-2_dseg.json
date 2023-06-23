@@ -1,0 +1,51 @@
+{
+    "rois": {
+        "0": {
+            "label": "empty",
+            "center": [
+                -0.18806494897906134,
+                -16.79688955790769,
+                20.789034696021602
+            ],
+            "size": 674301
+        },
+        "1": {
+            "label": "R_hemisphere",
+            "center": [
+                27.846270655781062,
+                -20.82268232965646,
+                9.930676767418248
+            ],
+            "size": 117219
+        },
+        "2": {
+            "label": "L_hemisphere",
+            "center": [
+                -28.232584512366344,
+                -22.24786694027432,
+                9.74756093170609
+            ],
+            "size": 111109
+        }
+    },
+    "Atlasname": "Hemispheric",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "3",
+    "AverageVolumePerRegion": "300876.3333333333",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
+}

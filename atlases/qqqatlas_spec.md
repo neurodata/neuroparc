@@ -21,7 +21,8 @@ Must be in the NIFTI format and capable of being opened by any standard MRI view
 ## File 2: Atlas Information
 
 File Name: `<atlas name>-regions-1x1x1.json`
-```
+
+```json
 {
     "MetaData": {
         "AtlasName": {Name},
@@ -46,6 +47,7 @@ File Name: `<atlas name>-regions-1x1x1.json`
 	...
      }
 }
+```
 
 Fields (all required unless specified):
 - Region <Number of region>

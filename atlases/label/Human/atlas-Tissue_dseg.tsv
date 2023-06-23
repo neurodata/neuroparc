@@ -1,0 +1,5 @@
+index	label	hemisphere
+0	null+csf	bilateral
+1	Gray_Matter	bilateral
+2	Gray_Matter_White_Matter_Boundary	bilateral
+3	White_Matter	bilateral

@@ -1,0 +1,60 @@
+{
+    "rois": {
+        "0": {
+            "label": "null+csf",
+            "center": [
+                -0.18806494897906134,
+                -16.79688955790769,
+                20.789034696021602
+            ],
+            "size": 674301
+        },
+        "1": {
+            "label": "Gray_Matter",
+            "center": [
+                0.35213610715695154,
+                -15.129435573773307,
+                11.733891299500911
+            ],
+            "size": 59519
+        },
+        "2": {
+            "label": "Gray_Matter_White_Matter_Boundary",
+            "center": [
+                0.5448329859617758,
+                -25.09522391680727,
+                6.230434159305702
+            ],
+            "size": 91793
+        },
+        "3": {
+            "label": "White_Matter",
+            "center": [
+                0.6535534480739926,
+                -21.383184378618168,
+                13.447475575329463
+            ],
+            "size": 77016
+        }
+    },
+    "Atlasname": "Tissue",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "4",
+    "AverageVolumePerRegion": "225657.25",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
+}

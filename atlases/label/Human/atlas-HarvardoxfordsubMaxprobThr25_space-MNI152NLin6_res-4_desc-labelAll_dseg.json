@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "",
-        "Number of Regions": "22",
-        "Average Volume Per Region": "4970.454545454545",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": ""
-    },
     "rois": {
         "0": {
             "label": null,
@@ -210,5 +198,25 @@
             ],
             "size": 10
         }
-    }
+    },
+    "Atlasname": "",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "",
+    "NumberOfRegions": "22",
+    "AverageVolumePerRegion": "4970.454545454545",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

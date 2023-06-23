@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "CPAC200",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "201",
-        "Average Volume Per Region": "35925.532338308454",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://github.com/FCP-INDI/C-PAC"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -1821,5 +1809,25 @@
             ],
             "size": 5697
         }
-    }
+    },
+    "Atlasname": "CPAC200",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "201",
+    "AverageVolumePerRegion": "35925.532338308454",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://github.com/FCP-INDI/C-PAC"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

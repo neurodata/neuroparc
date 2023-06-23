@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Schaefer1000",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "1001",
-        "Average Volume Per Region": "901.7272727272727",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -9021,5 +9009,25 @@
             ],
             "size": 71
         }
-    }
+    },
+    "Atlasname": "Schaefer1000",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "1001",
+    "AverageVolumePerRegion": "901.7272727272727",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

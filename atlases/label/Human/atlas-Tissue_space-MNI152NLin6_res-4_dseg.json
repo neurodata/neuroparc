@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Tissue",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "4",
-        "Average Volume Per Region": "27337.5",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": ""
-    },
     "rois": {
         "0": {
             "label": "null+csf",
@@ -48,5 +36,25 @@
             ],
             "size": 9635
         }
-    }
+    },
+    "Atlasname": "Tissue",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "4",
+    "AverageVolumePerRegion": "27337.5",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

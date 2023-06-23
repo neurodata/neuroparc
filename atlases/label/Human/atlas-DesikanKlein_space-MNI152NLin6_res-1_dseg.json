@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "DesikanKlein",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "97",
-        "Average Volume Per Region": "74443.62886597938",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.sciencedirect.com/science/article/pii/S1053811906000437?via%3Dihub"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -885,5 +873,25 @@
             ],
             "size": 8155
         }
-    }
+    },
+    "Atlasname": "DesikanKlein",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "97",
+    "AverageVolumePerRegion": "74443.62886597938",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.sciencedirect.com/science/article/pii/S1053811906000437?via%3Dihub"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

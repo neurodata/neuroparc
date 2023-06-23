@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "AAL",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "yes",
-        "Symmetrical": "no",
-        "Number of Regions": "117",
-        "Average Volume Per Region": "7714.777777777777",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pubmed/11771995"
-    },
     "rois": {
         "0": {
             "label": "null",
@@ -1085,5 +1073,25 @@
             "center": null,
             "size": null
         }
-    }
+    },
+    "Atlasname": "AAL",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "yes",
+    "Symmetrical": "no",
+    "NumberOfRegions": "117",
+    "AverageVolumePerRegion": "7714.777777777777",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/11771995"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

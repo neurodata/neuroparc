@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Talairach",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "960",
-        "Average Volume Per Region": "940.2385416666667",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pubmed/7008525"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -8652,5 +8640,25 @@
             ],
             "size": 12
         }
-    }
+    },
+    "Atlasname": "Talairach",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "960",
+    "AverageVolumePerRegion": "940.2385416666667",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/7008525"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

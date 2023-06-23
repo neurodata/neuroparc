@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "DS01876",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "1730",
-        "Average Volume Per Region": "63.20809248554913",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://arxiv.org/pdf/1312.4318.pdf"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -15582,5 +15570,25 @@
             ],
             "size": 2
         }
-    }
+    },
+    "Atlasname": "DS01876",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "1730",
+    "AverageVolumePerRegion": "63.20809248554913",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://arxiv.org/pdf/1312.4318.pdf"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

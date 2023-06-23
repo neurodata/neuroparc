@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "DKT",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "84",
-        "Average Volume Per Region": "1301.7857142857142",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.frontiersin.org/articles/10.3389/fnins.2012.00171/full"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -768,5 +756,25 @@
             ],
             "size": 445
         }
-    }
+    },
+    "Atlasname": "DKT",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "84",
+    "AverageVolumePerRegion": "1301.7857142857142",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.frontiersin.org/articles/10.3389/fnins.2012.00171/full"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

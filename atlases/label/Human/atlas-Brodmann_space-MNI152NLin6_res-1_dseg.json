@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Brodmann",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "42",
-        "Average Volume Per Region": "171929.33333333334",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://scalablebrainatlas.incf.org/human/B05_on_Conte69"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -390,5 +378,25 @@
             ],
             "size": 158164
         }
-    }
+    },
+    "Atlasname": "Brodmann",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "42",
+    "AverageVolumePerRegion": "171929.33333333334",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://scalablebrainatlas.incf.org/human/B05_on_Conte69"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

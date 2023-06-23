@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Slab907",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "908",
-        "Average Volume Per Region": "994.0848017621146",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -8184,5 +8172,25 @@
             ],
             "size": 23
         }
-    }
+    },
+    "Atlasname": "Slab907",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "908",
+    "AverageVolumePerRegion": "994.0848017621146",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "http://people.csail.mit.edu/ythomas/publications/2018LocalGlobal-CerebCor.pdf"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

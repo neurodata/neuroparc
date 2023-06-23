@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Destrieux",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "75",
-        "Average Volume Per Region": "96280.42666666667",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pubmed/20547229"
-    },
     "rois": {
         "0": {
             "label": "null",
@@ -692,5 +680,25 @@
             ],
             "size": 1616
         }
-    }
+    },
+    "Atlasname": "Destrieux",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "75",
+    "AverageVolumePerRegion": "96280.42666666667",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/20547229"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

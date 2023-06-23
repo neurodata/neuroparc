@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Hammersmith",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "no",
-        "Number of Regions": "83",
-        "Average Volume Per Region": "311.34939759036143",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "http://brain-development.org/brain-atlases/adult-brain-atlases/adult-brain-maximum-probability-map-hammers-mith-atlas-n30r83-in-mni-space/"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -763,5 +751,25 @@
             ],
             "size": 108
         }
-    }
+    },
+    "Atlasname": "Hammersmith",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "83",
+    "AverageVolumePerRegion": "311.34939759036143",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "http://brain-development.org/brain-atlases/adult-brain-atlases/adult-brain-maximum-probability-map-hammers-mith-atlas-n30r83-in-mni-space/"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

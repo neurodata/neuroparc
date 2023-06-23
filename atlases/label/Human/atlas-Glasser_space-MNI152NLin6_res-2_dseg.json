@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Glasser",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "180",
-        "Average Volume Per Region": "521.9944444444444",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4990127/"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -1636,5 +1624,25 @@
             ],
             "size": 364
         }
-    }
+    },
+    "Atlasname": "Glasser",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "180",
+    "AverageVolumePerRegion": "521.9944444444444",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4990127/"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

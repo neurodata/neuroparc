@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Princetonfisual-top",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "no",
-        "Number of Regions": "49",
-        "Average Volume Per Region": "18421.0",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4585523/"
-    },
     "rois": {
         "0": {
             "label": "null",
@@ -458,5 +446,25 @@
             ],
             "size": 4
         }
-    }
+    },
+    "Atlasname": "Princetonfisual-top",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "49",
+    "AverageVolumePerRegion": "18421.0",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4585523/"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[2, 2, 2] mm"
 }

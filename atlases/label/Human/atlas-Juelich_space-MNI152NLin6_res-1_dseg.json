@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Juelich",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "yes",
-        "Symmetrical": "no",
-        "Number of Regions": "104",
-        "Average Volume Per Region": "69433.0",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://scalablebrainatlas.incf.org/human/EAZ05_v18"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -948,5 +936,25 @@
             ],
             "size": 456
         }
-    }
+    },
+    "Atlasname": "Juelich",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "yes",
+    "Symmetrical": "no",
+    "NumberOfRegions": "104",
+    "AverageVolumePerRegion": "69433.0",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://scalablebrainatlas.incf.org/human/EAZ05_v18"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

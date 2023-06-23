@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Hemispheric",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "no",
-        "Number of Regions": "3",
-        "Average Volume Per Region": "2407010.6666666665",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": ""
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -39,5 +27,25 @@
             ],
             "size": 880641
         }
-    }
+    },
+    "Atlasname": "Hemispheric",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "3",
+    "AverageVolumePerRegion": "2407010.6666666665",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

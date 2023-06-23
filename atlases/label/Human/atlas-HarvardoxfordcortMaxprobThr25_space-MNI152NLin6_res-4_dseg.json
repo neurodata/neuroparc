@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "HarvardOxford Cortical",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "49",
-        "Average Volume Per Region": "2231.6326530612246",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://scalablebrainatlas.incf.org/human/HOA06"
-    },
     "rois": {
         "0": {
             "label": "null",
@@ -453,5 +441,25 @@
             ],
             "size": 658
         }
-    }
+    },
+    "Atlasname": "HarvardOxford Cortical",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "49",
+    "AverageVolumePerRegion": "2231.6326530612246",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://scalablebrainatlas.incf.org/human/HOA06"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "MICCAI",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "",
-        "Symmetrical": "no",
-        "Number of Regions": "134",
-        "Average Volume Per Region": "816.044776119403",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html"
-    },
     "rois": {
         "0": {
             "label": null,
@@ -1218,5 +1206,25 @@
             ],
             "size": 39
         }
-    }
+    },
+    "Atlasname": "MICCAI",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "",
+    "Symmetrical": "no",
+    "NumberOfRegions": "134",
+    "AverageVolumePerRegion": "816.044776119403",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

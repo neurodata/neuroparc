@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "CAPRSC",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "no",
-        "Number of Regions": "333",
-        "Average Volume Per Region": "21.594594594594593",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pubmed/25316338"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -3013,5 +3001,25 @@
             ],
             "size": 6
         }
-    }
+    },
+    "Atlasname": "CAPRSC",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "no",
+    "NumberOfRegions": "333",
+    "AverageVolumePerRegion": "21.594594594594593",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/25316338"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[4, 4, 4] mm"
 }

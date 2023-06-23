@@ -1,16 +1,4 @@
 {
-    "MetaData": {
-        "AtlasName": "Yeo-7",
-        "Description": "",
-        "Native Coordinate Space": "",
-        "Hierarchical": "no",
-        "Symmetrical": "yes",
-        "Number of Regions": "8",
-        "Average Volume Per Region": "902629.0",
-        "Year Generated": "2020",
-        "Generation Method": "",
-        "Source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174820/"
-    },
     "rois": {
         "0": {
             "label": "empty",
@@ -84,5 +72,25 @@
             ],
             "size": 135223
         }
-    }
+    },
+    "Atlasname": "Yeo-7",
+    "Description": "",
+    "NativeCoordinateSpace": "",
+    "Hierarchical": "no",
+    "Symmetrical": "yes",
+    "NumberOfRegions": "8",
+    "AverageVolumePerRegion": "902629.0",
+    "YearGenerated": "2020",
+    "GenerationMethod": "",
+    "ReferencesAndLinks": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174820/"
+    ],
+    "Space": "MNI152NLin6",
+    "BIDSVersion": "1.8.0",
+    "Authors": [
+        "",
+        ""
+    ],
+    "Species": "Homo sapiens",
+    "Resolution": "[1, 1, 1] mm"
 }

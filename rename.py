@@ -98,6 +98,7 @@ def rename_csv():
             print(f"{filename}.csv -> {new_filename}")
             if RENAME:
                 df.to_csv(output_dir / new_filename, sep="\t", index=False)
+                file.unlink()
 
 
 
